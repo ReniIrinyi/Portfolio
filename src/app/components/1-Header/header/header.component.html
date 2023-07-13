@@ -1,0 +1,34 @@
+<div id="header" class="header-container" [class.sticky]="isSticky | async">
+  <ul>
+    <li>
+      <a
+        (click)="scrollTo('home')"
+        (click)="renderComponentWhenClicked()"
+        routerLink="/home"
+        href="javascript:void(0)"
+        >Home</a
+      >
+    </li>
+    <li>
+      <a (click)="scrollTo('projects')" routerLink="/projects" ref="#projects"
+        >Projects</a
+      >
+    </li>
+    <!-- <li>
+      <a routerLink="/blog" ref="#blog">Blog</a>
+    </li> -->
+    <li>
+      <a routerLink="/resources" href="#resources"> Resources </a>
+    </li>
+    <li>
+      <a
+        (click)="scrollTo('techstack')"
+        (click)="renderComponentWhenClicked()"
+        routerLink="/home"
+        href="javascript:void(0)"
+        >Tech-Stack</a
+      >
+    </li>
+    <li><a (click)="scrollTo('contact')" ref="#contact">Contact</a></li>
+  </ul>
+</div>

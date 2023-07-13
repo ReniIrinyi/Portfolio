@@ -1,0 +1,556 @@
+[
+  {
+    "categories": [
+      {
+        "header": "HTML 5 Resources",
+        "name": "HTML",
+        "resources": [
+          {
+            "id": 1,
+            "name": "HTML-Entities",
+            "url": "http://unicode.e-workers.de/entities.php",
+            "info": "All Html-Entities"
+          },
+          {
+            "id": 2,
+            "name": "Markup Validator",
+            "url": "https://validator.w3.org/",
+            "info": "The validator checks the markup validity"
+          }
+        ]
+      },
+      {
+        "header": "Css / Sass Resources",
+        "name": "CSS/Sass",
+        "resources": [
+          {
+            "id": 1,
+            "name": "Meyerweb Css Reset",
+            "url": "https://meyerweb.com/eric/tools/css/reset/",
+            "info": "A reset stylesheet to reduce browser inconsistencies"
+          },
+          {
+            "id": 2,
+            "name": "Clippy",
+            "url": "https://bennettfeely.com/clippy/",
+            "info": "CSS clip-path maker"
+          },
+          {
+            "id": 3,
+            "name": "Easings",
+            "url": "https://easings.net/de",
+            "info": "Cheat Sheet für Easing-Funktionen"
+          },
+          {
+            "id": 4,
+            "name": "Gradients",
+            "url": "https://gradient-designer.csspost.com/",
+            "info": "Gradient Designer"
+          },
+          {
+            "id": 5,
+            "name": "CSS-Tricks",
+            "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+            "info": "A Complete Guide to CSS Grid"
+          },
+          {
+            "id": 6,
+            "name": "CSS-Tricks",
+            "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+            "info": "A Complete Guide to Flexbox"
+          },
+          {
+            "id": 7,
+            "name": "MDN Web Docs",
+            "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes?retiredLocale=de",
+            "info": "Pseudo-classes"
+          }
+        ]
+      },
+      {
+        "header": "angular",
+        "name": "Angular",
+        "resources": [
+          {
+            "id": 1,
+
+            "name": "Angular Docs",
+            "url": "https://angular.io/docs",
+            "info": "Reference by Angular"
+          }
+        ]
+      },
+      {
+        "header": "Java Resources",
+        "name": "Java",
+        "resources": [
+          {
+            "id": 1,
+            "name": "Oracle",
+            "url": "https://docs.oracle.com/en/java/",
+            "info": "Java Documentation"
+          }
+        ]
+      },
+      {
+        "header": "Spring Boot Resources",
+        "name": "SpringBoot",
+        "resources": [
+          {
+            "id": 1,
+            "name": "Spring",
+            "url": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#legal",
+            "info": "Spring Boot Reference Documentation"
+          },
+          {
+            "id": 2,
+            "name": "Spring initializr",
+            "url": "https://start.spring.io/",
+            "info": "Initializr generates spring boot project with just what you need to start quickly"
+          }
+        ]
+      },
+      {
+        "header": "JavaScript Resources",
+        "name": "JavaScript",
+        "resources": [
+          {
+            "id": 1,
+            "name": "JavaScript QuerySelector",
+            "url": "https://www.javascripttutorial.net/javascript-dom/javascript-queryselector/",
+            "info": "How to use the JavaScript querySelector() and querySelectorAll()"
+          },
+          {
+            "id": 2,
+            "name": "JS Array Methods",
+            "url": "https://www.freecodecamp.org/news/the-javascript-array-handbook/",
+            "info": "JS Array Methods Explained with Examples"
+          }
+        ]
+      },
+
+      {
+        "header": "Developement Tools",
+        "name": "Tools",
+        "resources": [
+          {
+            "id": 1,
+            "name": "IntelliJ Community Edition",
+            "url": "https://www.jetbrains.com/de-de/idea/download/?section=mac",
+            "info": "The best free IDE for Java Developement"
+          },
+          {
+            "id": 2,
+            "name": "Visual Studio Code",
+            "url": "https://code.visualstudio.com/",
+            "info": "Also very good IDE. I use it for JavaScript and Angular projects"
+          },
+          {
+            "id": 3,
+            "name": "Codepen",
+            "url": "https://codepen.io/",
+            "info": "Codepen is an essential tool to quickly test out ideas"
+          },
+          {
+            "id": 4,
+            "name": "Netlifly",
+            "url": "https://www.netlify.com/",
+            "info": "Host static websites for free"
+          },
+          {
+            "id": 4,
+            "name": "Vercel",
+            "url": "https://vercel.com/",
+            "info": "Host static websites for free"
+          }
+        ]
+      },
+      {
+        "header": "Testing, Optimization",
+        "name": "Testing",
+        "resources": [
+          {
+            "id": 1,
+            "name": "Codepen",
+            "url": "https://codepen.io/",
+            "info": "Codepen is an essential tool to quickly test out ideas"
+          },
+          {
+            "id": 2,
+            "name": "Can I Use",
+            "url": "https://caniuse.com/",
+            "info": "Can I use provides up-to-date browser support tables for support of front-end web technologies"
+          },
+          {
+            "id": 3,
+            "name": "Seorch",
+            "url": "https://seorch.de/",
+            "info": "Free Seo-Check"
+          },
+          {
+            "id": 4,
+            "name": "Front-End Checklist",
+            "url": "https://frontendchecklist.io/",
+            "info": "The Front-End Checklist Application is perfect for modern websites and meticulous developers. "
+          },
+          {
+            "id": 4,
+            "name": "Am I responsive?",
+            "url": "https://ui.dev/amiresponsive",
+            "info": "A tool for quick screenshots on various Devices"
+          },
+          {
+            "id": 5,
+            "name": "Responsively",
+            "url": "https://responsively.app/",
+            "info": "Open-source Tool for responsive design"
+          },
+          {
+            "id": 6,
+            "name": "Squoosh",
+            "url": "https://squoosh.app/",
+            "info": "Squoosh can reduce file size and maintain high quality"
+          }
+        ]
+      },
+      {
+        "header": "Great Places to get more Coding Practice",
+        "name": "Practice",
+        "resources": [
+          {
+            "id": 1,
+            "name": "HackerRank",
+            "url": "https://www.hackerrank.com/",
+            "info": "Improve your tech and coding skills"
+          },
+          {
+            "id": 2,
+            "name": "I code this",
+            "url": "https://icodethis.com/",
+            "info": "Daily projects you can build to improve your coding skills"
+          },
+          {
+            "id": 3,
+            "name": "Codewars",
+            "url": "https://www.codewars.com/",
+            "info": "Improve your development skills by training with challenging katas"
+          },
+          {
+            "id": 4,
+            "name": "DevChallenges",
+            "url": "https://devchallenges.io/",
+            "info": "Great daily Challenges"
+          },
+          {
+            "id": 5,
+            "name": "LeetCode",
+            "url": "https://leetcode.com/",
+            "info": "Prepare for technical interviews"
+          }
+        ]
+      },
+      {
+        "header": "Bootcamps",
+        "name": "Bootcamps",
+        "resources": [
+          {
+            "id": 1,
+            "name": "MongoDB Certifications",
+            "url": "https://www.mongodb.com/academia",
+            "info": "MongoDB free resources for database knowledge and skills"
+          },
+          {
+            "id": 2,
+            "name": "The Odin Project",
+            "url": "https://www.theodinproject.com/",
+            "info": "Free full stack curriculum"
+          },
+          {
+            "id": 3,
+            "name": "Edx",
+            "url": "https://www.edx.org/",
+            "info": "MOOC provider"
+          },
+          {
+            "id": 4,
+            "name": "Epam",
+            "url": "https://training.epam.com/",
+            "info": "MOOC provider"
+          },
+          {
+            "id": 5,
+            "name": "FreeCodeCamp",
+            "url": "https://www.freecodecamp.org/learn/",
+            "info": "Learn programming for free"
+          },
+          {
+            "id": 6,
+            "name": "Mooc.fi",
+            "url": "https://www.mooc.fi/en/",
+            "info": "MOOC provider"
+          },
+          {
+            "id": 7,
+            "name": "Udemy",
+            "url": "https://www.udemy.com/",
+            "info": "Various coding bootcamps and courses"
+          },
+          {
+            "id": 8,
+            "name": "Exercism",
+            "url": "https://exercism.org/",
+            "info": "Free programming exercises"
+          }
+        ]
+      },
+      {
+        "header": "Blogs and Community",
+        "name": "Blogs",
+        "resources": [
+          {
+            "id": 1,
+            "name": "CSS-Tricks",
+            "url": "https://css-tricks.com/",
+            "info": "Useful Articles about CSS"
+          },
+          {
+            "id": 2,
+            "name": "StackOverFlow",
+            "url": "https://stackoverflow.com/",
+            "info": "Community for Developers"
+          },
+          {
+            "id": 3,
+            "name": "Reddit - SideProject",
+            "url": "https://www.reddit.com/r/SideProject/",
+            "info": "Community for sharing side projects"
+          },
+          {
+            "id": 4,
+            "name": "Makers",
+            "url": "https://make.rs/",
+            "info": "Show the world what you´ve done"
+          },
+          {
+            "id": 5,
+            "name": "Indie Hackers",
+            "url": "https://www.indiehackers.com/start",
+            "info": "Read about indie hackers"
+          }
+        ]
+      },
+      {
+        "header": "Images and Videos",
+        "name": "Images",
+        "resources": [
+          {
+            "id": 1,
+            "name": "Brandbird",
+            "url": "https://www.brandbird.app/?via=mokkapps",
+            "info": "BrandBird turns your screenshots into captivating graphics"
+          },
+          {
+            "id": 2,
+            "name": "Unsplash",
+            "url": "https://unsplash.com/de",
+            "info": "Free Images and Photos"
+          },
+          {
+            "id": 3,
+            "name": "Coverr",
+            "url": "https://coverr.co/",
+            "info": "Free Stock Videos"
+          },
+          {
+            "id": 4,
+            "name": "Videezy",
+            "url": "https://www.videezy.com/",
+            "info": "Free Hd Stock Footage & Videos"
+          }
+        ]
+      },
+      {
+        "header": "Icons and Fonts",
+        "name": "Icons",
+        "resources": [
+          {
+            "id": 1,
+
+            "name": "SVG REPO",
+            "url": "https://www.svgrepo.com/",
+            "info": "500.000+ Open-licensed SVG Vector and Icons"
+          },
+          {
+            "id": 2,
+
+            "name": "Heroicons",
+            "url": "https://heroicons.com/",
+            "info": "Beautiful hand-crafted SVG icons, by the makers of Tailwind CSS"
+          },
+          {
+            "id": 3,
+
+            "name": "Google Fonts",
+            "url": "https://fonts.google.com/",
+            "info": "A robust catalog of open-source fonts"
+          },
+          {
+            "id": 4,
+
+            "name": "TypeScale",
+            "url": "https://typescale.com/",
+            "info": "Visual Type Scale Calculator "
+          }
+        ]
+      },
+      {
+        "header": "Colors",
+        "name": "Colors",
+        "resources": [
+          {
+            "id": 1,
+
+            "name": "Open Color",
+            "url": "https://yeun.github.io/open-color/",
+            "info": "Open color is an open-source color scheme"
+          },
+          {
+            "id": 2,
+
+            "name": "Flat UI Colors",
+            "url": "https://flatuicolors.com/",
+            "info": "Open-source color scheme"
+          },
+          {
+            "id": 3,
+
+            "name": "Make Tint and Shades",
+            "url": "https://maketintsandshades.com/",
+            "info": "Tint & Shade Generator"
+          },
+          {
+            "id": 4,
+            "name": "Colors",
+            "url": "https://coolors.co/",
+            "info": "Color palettes generator"
+          },
+          {
+            "id": 5,
+            "name": "Colors",
+            "url": "https://coolors.co/contrast-checker/112a46-acc8e5",
+            "info": "Color Contrast Checker"
+          }
+        ]
+      },
+
+      {
+        "header": "Inspiration",
+        "name": "Inspiration",
+        "resources": [
+          {
+            "id": 1,
+            "name": "One Page Love",
+            "url": "https://onepagelove.com/",
+            "info": "One Page website inspiration, templates and resources"
+          },
+          {
+            "id": 2,
+            "name": "Awwwards",
+            "url": "https://www.awwwards.com/",
+            "info": "Follow what's brand new in digital design"
+          },
+          {
+            "id": 3,
+            "name": "Screenlane",
+            "url": "https://screenlane.com/",
+            "info": "Web and mobile UI"
+          },
+          {
+            "id": 4,
+            "name": "Landbook",
+            "url": "https://land-book.com/",
+            "info": "Website design inspiration Gallery"
+          },
+          {
+            "id": 5,
+            "name": "The Startup Pitch",
+            "url": "https://thestartuppitch.com/category/pitches/",
+            "info": "DIY Startup news"
+          },
+          {
+            "id": 6,
+            "name": "The Startup Base",
+            "url": "https://startupbase.io/",
+            "info": "Discover new Startups"
+          }
+        ]
+      },
+      {
+        "header": "Useful Links",
+        "name": "Useful",
+        "resources": [
+          {
+            "id": 1,
+            "name": "Asciinema",
+            "url": "https://asciinema.org/",
+            "info": "Record and share your terminal sessions, the simple way"
+          },
+          {
+            "id": 2,
+            "name": "Svg-Path Editor",
+            "url": "https://yqnn.github.io/svg-path-editor/",
+            "info": "Creating individual Svg's"
+          },
+          {
+            "id": 3,
+            "name": "Text to ASCII Art",
+            "url": "https://patorjk.com/",
+            "info": "Write ASCII-Art"
+          },
+          {
+            "id": 4,
+            "name": "Roadmaps for Developers",
+            "url": "https://roadmap.sh/frontend",
+            "info": "Step by step guide to becoming a better Developer"
+          },
+          {
+            "id": 5,
+            "name": "Dog API",
+            "url": "https://dog.ceo/dog-api/about",
+            "info": "Original dataset taken from the the Stanford Dogs Dataset"
+          },
+          {
+            "id": 5,
+            "name": "JSON Formatter",
+            "url": "https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa",
+            "info": "Makes JSON easy to read"
+          },
+          {
+            "id": 6,
+            "name": "Mermaid",
+            "url": "https://mermaid.js.org/",
+            "info": "Diagramming and charting tool"
+          },
+          {
+            "id": 7,
+            "name": "Transform",
+            "url": "https://transform.tools/js-object-to-json",
+            "info": "A polyglot web converter"
+          },
+          {
+            "id": 8,
+            "name": "Sasshub",
+            "url": "https://www.saashub.com/",
+            "info": "Software alternatives and Reviews"
+          },
+          {
+            "id": 9,
+            "name": "GitHub",
+            "url": "https://education.github.com/git-cheat-sheet-education.pdf",
+            "info": "Git Cheat Sheet"
+          }
+        ]
+      }
+    ]
+  }
+]

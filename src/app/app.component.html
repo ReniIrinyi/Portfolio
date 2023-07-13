@@ -1,0 +1,8 @@
+<div>
+  <app-header></app-header>
+  <app-home *ngIf="componentStatus"></app-home>
+  <router-outlet></router-outlet>
+  <app-blog *ngIf="blogComponentStatus"></app-blog>
+  <app-techstack *ngIf="componentStatus"></app-techstack>
+  <app-footer></app-footer>
+</div>

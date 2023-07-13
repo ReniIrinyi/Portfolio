@@ -1,0 +1,21 @@
+@import "../../../../styles.scss";
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 1rem;
+  li {
+    display: flex;
+    &:not(:nth-of-type(1)) {
+      padding-left: 1rem;
+    }
+    & a:hover {
+      @include svgHover;
+    }
+  }
+}
+.svg {
+  @include svg;
+}

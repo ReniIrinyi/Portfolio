@@ -1,0 +1,33 @@
+<app-support></app-support>
+<div class="resources-container">
+  <nav>
+    <ul>
+      <li *ngFor="let category of categories">
+        <a
+          (click)="scrollTo(category.name.toLowerCase())"
+          href="javascript:void(0)"
+          ><i class="group-nav--icon"></i>{{ category.name }}</a
+        >
+      </li>
+    </ul>
+  </nav>
+  <section
+    *ngFor="let category of categories"
+    class="container"
+    id="{{ category.name.toLowerCase() }}"
+  >
+    <h3>{{ category.header }}</h3>
+    <ng-container
+      *ngFor="let resource of getResourcesByCategory(category.name)"
+    >
+      <div class="resources-item">
+        <a href="{{ resource.url }}" target="_blank">
+          <p>
+            {{ resource.name }}
+          </p>
+          <p>{{ resource.info }}</p>
+        </a>
+      </div>
+    </ng-container>
+  </section>
+</div>

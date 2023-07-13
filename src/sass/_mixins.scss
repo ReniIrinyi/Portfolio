@@ -1,0 +1,33 @@
+/*========================
+MIXINS
+========================*/
+
+@mixin linkHover {
+  color: $white;
+  transition: all 0.5s;
+}
+
+@mixin boxShadow() {
+  box-shadow: -1px 5px 12px 2px $blue-dark;
+}
+
+@mixin svg() {
+  color: $white-light;
+  font-size: 1.7rem;
+  @include respond(tablet) {
+    font-size: 2rem;
+  }
+  @include respond(tablet, landscape) {
+    font-size: 2rem;
+  }
+  @include respond(desktop) {
+    font-size: 3rem;
+  }
+}
+@mixin svgHover() {
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
+}
+
+/*========================
+========================*/

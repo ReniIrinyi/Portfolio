@@ -1,0 +1,45 @@
+@import "../../../../styles.scss";
+/*========================
+FOOTER COMPONENT
+========================*/
+.footer-container {
+  height: 2rem;
+  background-color: $background-footer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 2rem;
+  @include respond(tablet) {
+    height: 5rem;
+  }
+  @include respond(desktop) {
+    height: 7rem;
+  }
+}
+app-links {
+  justify-content: center;
+  display: flex;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  background-color: $background-footer;
+  padding-bottom: 2rem;
+
+  a {
+    font-size: $fontSize-p-small;
+    letter-spacing: 1.1;
+    color: $footer-fontColor;
+    text-decoration: none;
+    align-self: center;
+    justify-self: center;
+
+    @include respond(desktop) {
+      font-size: $fontSize-p-regular;
+    }
+  }
+}
+/*========================
+========================*/

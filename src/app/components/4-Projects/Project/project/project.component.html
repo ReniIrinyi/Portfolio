@@ -1,0 +1,86 @@
+<div id="project" class="project-container">
+  <ng-container *ngIf="selectedProject">
+    <div class="project" [@fade-in]>
+      <div class="header-img-container {{ selectedProject.id }}" [@fade-in]>
+        <img
+          src="{{ selectedProject.mockup }}"
+          alt="{{ selectedProject.id }}"
+        />
+      </div>
+      <div class="text">
+        <p>
+          {{ selectedProject.text }}
+        </p>
+        <p>
+          <strong> Technologies used: </strong>
+          {{ selectedProject.tech }}
+        </p>
+        <div class="conclusion">
+          <p>{{ selectedProject.conclusion }}</p>
+        </div>
+        <ul>
+          <li>
+            <a href="{{ selectedProject.github }}">
+              <img
+                class="svg"
+                src="../../../../assets/icons/icons8-github.svg"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="{{ selectedProject.url }}">
+              <img
+                class="svg"
+                src="../../../../assets/icons/icons8-website-64.png"
+                alt=""
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="description description--1">
+        <div class="img-container">
+          <div>
+            <img src="{{ selectedProject.img1 }}" alt="" />
+          </div>
+        </div>
+
+        <p>{{ selectedProject.description1 }}</p>
+      </div>
+      <div class="description description--2">
+        <div class="img-container">
+          <div>
+            <img src="{{ selectedProject.img2 }}" alt="" />
+          </div>
+        </div>
+
+        <p>{{ selectedProject.description2 }}</p>
+      </div>
+      <div class="description description--3">
+        <div class="img-container">
+          <div>
+            <img src="{{ selectedProject.img3 }}" alt="" />
+          </div>
+        </div>
+
+        <p>{{ selectedProject.description3 }}</p>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button
+        (click)="switchPage(selectedProject, -1)"
+        [routerLink]="'/project/:' + selectedProject.idNumber"
+      >
+        Back
+      </button>
+      <button [routerLink]="'/projects'">back to Projects</button>
+      <button
+        (click)="switchPage(selectedProject, +1)"
+        [routerLink]="'/project/:' + selectedProject.idNumber"
+      >
+        Next
+      </button>
+    </div>
+  </ng-container>
+</div>

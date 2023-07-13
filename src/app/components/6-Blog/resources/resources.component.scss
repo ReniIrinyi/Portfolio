@@ -1,0 +1,94 @@
+@import "../../../../styles.scss";
+
+.resources-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: $main-background;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 1rem;
+  background-color: $background-light;
+}
+
+li a {
+  color: $black-fontColor;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: $fontSize-p-tiny;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+li {
+  background-color: $button1;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+li:hover {
+  background-color: $button1-hover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: row;
+  padding: 1rem 1rem;
+  height: auto;
+  justify-content: center;
+
+  & h3 {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    color: $header-resources;
+    justify-self: center;
+    align-self: center;
+    grid-column: 1 / span 3;
+    grid-row: 1/1;
+    @include font-size-p;
+    letter-spacing: normal;
+    text-transform: uppercase;
+  }
+}
+.resources-item {
+  display: flex;
+  flex-direction: column;
+  background-color: $item-background;
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: all 1s;
+  width: 8rem;
+  height: 10rem;
+
+  & a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  & p {
+    color: $grey-fontColor;
+    @include font-size-p-tiny;
+  }
+  & p:nth-of-type(1) {
+    color: $light-fontColor;
+    @include font-size-p-tiny;
+    text-decoration: none;
+    padding: 0.5rem 0;
+  }
+}
+
+.resources-item:hover {
+  scale: 1.05;
+}

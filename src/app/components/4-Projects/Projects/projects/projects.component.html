@@ -1,0 +1,24 @@
+<div class="projects-container" [@fade-in]>
+  <div class="projects" id="projects">
+    <ng-container *ngFor="let project of projects">
+      <div class="project-container">
+        <div class="header-container">
+          <div class="img-container {{ project.id }}">
+            <a
+              (click)="selectPage(project)"
+              [routerLink]="'/project/:' + project.idNumber"
+            >
+              <img src="{{ project.header }}" alt="{{ project.id }}" />
+            </a>
+          </div>
+          <div class="text-container">
+            <a [routerLink]="'/project/:' + project.idNumber">
+              <p>{{ project.name }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+  <app-support></app-support>
+</div>

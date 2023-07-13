@@ -1,0 +1,85 @@
+@import "../../../../styles.scss";
+
+.support-container {
+  display: flex;
+  background-color: $support-header;
+  max-width: 100%;
+  justify-content: center;
+}
+.support-panel {
+  justify-content: center;
+}
+.support-panel,
+.panel-content {
+  width: 90%;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}
+.panel-content:hover p,
+.panel-content:hover img {
+  transform: scale(1.05);
+}
+
+.panel-content p {
+  display: flex;
+  flex-direction: row;
+  color: $support-fontColor;
+  align-items: center;
+  transition: all 1s;
+}
+
+.panel-content p {
+  padding-left: 0.5rem;
+  letter-spacing: 1.2;
+}
+
+.panel-content img {
+  transition: all 1s;
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.panel-content input {
+  display: none;
+}
+
+.panel-content label {
+  position: absolute;
+  display: block;
+  right: 0%;
+  top: 15%;
+  cursor: pointer;
+  transition: all 1s;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+}
+
+.panel-content label::after,
+.panel-content label::before {
+  content: "";
+  width: 1px;
+  height: 8px;
+  background-color: $support-fontColor;
+  position: absolute;
+  transition: all 1s;
+}
+
+.panel-content label::before {
+  transform: rotateZ(35deg);
+}
+
+.panel-content label::after {
+  transform: rotateZ(-35deg);
+}
+
+.panel-content label:hover::before,
+.panel-content label:hover::after {
+  height: 10px;
+}

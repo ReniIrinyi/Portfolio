@@ -1,0 +1,124 @@
+/*========================
+FONTS
+========================*/
+$fontSize-h1-small: 1.7rem;
+$fontSize-h1-regular: 1.9rem;
+$fontSize-h1-big: 2.6rem;
+$fontSize-h1-xxl: 3.6rem;
+$fontSize-h1-desktop: 4.6rem;
+
+$fontSize-h2-small: 1.4rem;
+$fontSize-h2-regular: 1.8rem;
+$fontSize-h2-big: 1.9rem;
+$fontSize-h2-xxl: 2.6rem;
+$fontSize-h2-desktop: 3.6rem;
+
+$fontSize-h3-regular: 1.7rem;
+$fontSize-h3-desktop: 2.7rem;
+
+$fontSize-h4-regular: 1.6rem;
+$fontSize-h4-desktop: 2.6rem;
+
+$fontSize-p-tiny: 0.8rem;
+$fontSize-p-small: 1rem;
+$fontSize-p-regular: 1.4rem;
+$fontSize-p-big: 1.6rem;
+$fontSize-p-xxl: 1.9rem;
+$fontSize-p-desktop: 2.6rem;
+
+$line-height-big: 1.7;
+$line-height-small: 1.3;
+/*========================
+========================*/
+@mixin font-size-h1 {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: $fontSize-h1-xxl;
+  @include respond(small-phone) {
+    font-size: $fontSize-h1-big;
+  }
+  @include respond(medium-phone) {
+    font-size: $fontSize-h1-big;
+  }
+  @include respond(desktop) {
+    font-size: $fontSize-h1-desktop;
+  }
+}
+@mixin font-size-h2 {
+  font-family: inherit;
+  font-size: $fontSize-h2-xxl;
+  @include respond(small-phone) {
+    font-size: $fontSize-h2-big;
+  }
+  @include respond(medium-phone) {
+    font-size: $fontSize-h2-big;
+  }
+  @include respond(desktop) {
+    font-size: $fontSize-h2-desktop;
+  }
+}
+@mixin font-size-p {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: $fontSize-p-big;
+  line-height: 1.15;
+  @include respond(small-phone) {
+    font-size: $fontSize-p-regular;
+  }
+  @include respond(medium-phone) {
+    font-size: $fontSize-p-regular;
+  }
+  @include respond(desktop) {
+    font-size: $fontSize-p-desktop;
+  }
+}
+@mixin font-size-p-tiny {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: $fontSize-p-tiny;
+  line-height: 1.15;
+  @include respond(small-phone) {
+    font-size: $fontSize-p-small;
+  }
+  @include respond(medium-phone) {
+    font-size: $fontSize-p-small;
+  }
+  @include respond(desktop) {
+    font-size: $fontSize-p-big;
+  }
+}
+@mixin font-link {
+  font-family: inherit;
+  color: $regular-fontColor;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: $fontSize-p-small;
+  @include respond(tablet) {
+    font-size: $fontSize-p-big;
+  }
+  @include respond(desktop) {
+    font-size: $fontSize-p-big;
+  }
+}
+@mixin font-projects-header {
+  color: $projects-header;
+  font-family: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 300;
+  border-top: 0.5px solid $projects-header;
+  border-bottom: 0.5px solid $projects-header;
+  font-size: $fontSize-p-tiny;
+  @include respond(tablet) {
+    font-size: $fontSize-p-small;
+  }
+  @include respond(tablet, landscape) {
+    font-size: $fontSize-p-regular;
+  }
+  @include respond(desktop) {
+    font-size: $fontSize-p-regular;
+  }
+}
+
+/*========================
+========================*/
