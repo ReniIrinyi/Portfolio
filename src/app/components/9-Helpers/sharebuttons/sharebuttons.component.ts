@@ -1,5 +1,4 @@
 import { Component, Input } from "@angular/core";
-import { ShareButton } from "ngx-sharebuttons/button";
 
 @Component({
   selector: "app-sharebuttons",
