@@ -32,6 +32,7 @@ li {
   margin: 0.5rem;
   border-radius: 15px;
   transition: all 0.5s;
+  @include boxShadow;
 }
 
 li:hover {
@@ -71,6 +72,7 @@ li:hover {
   transition: all 1s;
   width: 8rem;
   height: 10rem;
+  @include boxShadow;
 
   & a {
     display: flex;

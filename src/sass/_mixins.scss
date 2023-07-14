@@ -8,7 +8,7 @@ MIXINS
 }
 
 @mixin boxShadow() {
-  box-shadow: -1px 5px 12px 2px $blue-dark;
+  box-shadow: -1px 5px 12px 2px #0b202791;
 }
 
 @mixin svg() {

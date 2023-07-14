@@ -73,10 +73,15 @@
         "resources": [
           {
             "id": 1,
-
             "name": "Angular Docs",
             "url": "https://angular.io/docs",
             "info": "Reference by Angular"
+          },
+          {
+            "id": 2,
+            "name": "Share Buttons Component",
+            "url": "https://ngx-sharebuttons.netlify.app/share-button-directive",
+            "info": "A component to add a collection of share buttons."
           }
         ]
       },

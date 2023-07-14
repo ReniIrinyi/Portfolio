@@ -5,5 +5,11 @@ div {
   display: flex;
   flex-direction: column;
 }
+
+app-header {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
 /*========================
 ========================*/

@@ -85,6 +85,7 @@ video {
     top: calc(50% - 27px);
     left: calc(56% - 45px);
     animation: slideIn 10s 4s ease both;
+
     @include respond(small-phone, landscape) {
       left: calc(53% - 45px);
     }

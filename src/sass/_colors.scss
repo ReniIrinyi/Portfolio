@@ -36,6 +36,7 @@ $olive-light3: #619883;
 $olive-light2: #75ba9f;
 $olive-light1: #4f7e78;
 $olive: #1d2e27;
+$olive-dark3: #306853;
 $olive-dark2: #0b2027;
 $olive-dark1: #0a100e;
 
@@ -62,6 +63,7 @@ $button1: $olive-light3;
 $button1-hover: $olive-light2;
 
 //BACKGROUND
+$html-background: $olive-dark1;
 $main-background: $blue-regular2;
 
 //HEADER
@@ -71,10 +73,10 @@ $background-header: $olive-light1;
 $home-highlight-fontColor: $white;
 
 //ABOUT
-$background-about: $olive;
+$background-about: $olive-dark3;
 
 //TECHSTACK
-$techstack-highlight-fontColor: $blue-light2;
+$techstack-highlight-fontColor: $olive-light2;
 
 //PROJECTS
 $projects-header: $olive-dark2;
