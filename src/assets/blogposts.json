@@ -1,16 +1,22 @@
 [
   {
     "id": 1,
-    "date": "10. Jul. 2023",
-    "name": "First Post",
+    "date": "16. Jul. 2023",
+    "name": "Using particles.js as a background with Angular 16",
     "url": "https://vincentgarreau.com/particles.js/",
     "url2": "https://github.com/VincentGarreau/particles.js/",
-    "mockup": "string",
-    "header": "string",
+    "url3": "https://github.com/ReniIrinyi/Portfolio/blob/main/src/assets/particles.json",
+    "snippet1": "../assets/img/blog/particlesHtml.png",
+    "snippet2": "../assets/img/blog/homeContainer.png",
+    "snippet3": "../assets/img/blog/methodLoadParticles.png",
+    "snippet4": "string",
+    "snippet5": "string",
     "img": "../assets/img/blog/particles.png",
     "img2": "string",
-    "short": "string",
-    "text": "string",
-    "conclusion": "string"
+    "short": "I've always really liked dynamic backgrounds, and when I first came across the particles library, I knew I would use it when I had a portfolio. I did a lot of research on the internet on how to add the library to my project, but at first it seemed very complicated. I experimented a bit, and finally realised that it was easier than I thought - and like most blogs and videos describe. So I decided to take a few minutes and write it down to give an easy tutorial for those who are also big fans of similar effects.",
+    "text": "Before you get started, you need to visit the website of Vincent Garreau, respectively the generator. Here you can personalise the animation you want and download it. The most important files to download are particles.js and particles.json. You have to copy them to the assets directory. The json-file contains your customized properties of the animation, and the javascript file is the code of the particle itself.  ",
+    "text2": "To make it appear as a background, I created a div in app.home.html and added the id 'particles-js' and the classname 'body'. I wanted the animation to appear on the video, which I achieved by using the z-index and absolute positioning.",
+    "text3": "In home.component.ts I finally wrote a method to load the particle.js file.",
+    "conclusion": "Thats it."
   }
 ]

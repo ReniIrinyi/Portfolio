@@ -1,5 +1,4 @@
-<app-support></app-support>
-<div class="resources-container">
+<div class="resources-container" id="resources">
   <nav>
     <ul>
       <li *ngFor="let category of categories">
@@ -30,5 +29,10 @@
       </div>
     </ng-container>
   </section>
+  <div (click)="scrollTo('resources')" class="button-container">
+    <a (click)="scrollTo('resources')" href="javascript:void(0)">
+      <fa-icon class="svg" [icon]="faArrowUp"></fa-icon>
+    </a>
+  </div>
 </div>
 <app-sharebuttons></app-sharebuttons>

@@ -92,7 +92,7 @@ $line-height-small: 1.3;
   color: $regular-fontColor;
   text-decoration: none;
   font-weight: 400;
-  font-size: $fontSize-p-small;
+  font-size: $fontSize-p-tiny;
   @include respond(tablet) {
     font-size: $fontSize-p-big;
   }

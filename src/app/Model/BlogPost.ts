@@ -4,11 +4,17 @@ export interface BlogPost {
   name: string;
   url?: string; // Optional property
   url2?: string; // Optional property
-  mockup: string;
-  header: string;
+  url3?: string; // Optional property
+  snippet1?: string; // Optional property
+  snippet2?: string; // Optional property
+  snippet3?: string; // Optional property
+  snippet4?: string; // Optional property
+  snippet5?: string; // Optional property
   img?: string; // Optional property
   img2?: string; // Optional property
   short: string;
   text: string;
+  text2: string;
+  text3: string;
   conclusion: string;
 }

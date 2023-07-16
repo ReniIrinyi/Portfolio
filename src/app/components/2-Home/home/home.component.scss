@@ -2,6 +2,14 @@
 /*========================
 HOME COMPONENT
 ========================*/
+
+app-support {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
 .home-container {
   position: relative;
   height: 40rem;
@@ -18,18 +26,17 @@ HOME COMPONENT
 }
 video {
   position: absolute;
-  width: 100%;
-  height: 100%;
   z-index: 0;
   object-fit: cover;
   opacity: 0.9;
+  width: 100%;
+  height: 100%;
 }
 .body {
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
-  overflow: hidden;
 }
 .home-text-container {
   display: flex;
