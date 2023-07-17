@@ -29,15 +29,15 @@ app-links {
   padding-bottom: 2rem;
 
   a {
-    font-size: $fontSize-p-small;
+    font-size: $fontSize-p-regular;
     letter-spacing: 1.1;
     color: $footer-fontColor;
     text-decoration: none;
     align-self: center;
     justify-self: center;
 
-    @include respond(desktop) {
-      font-size: $fontSize-p-regular;
+    @include respond(small-phone) {
+      font-size: $fontSize-p-small;
     }
   }
 }

@@ -6,25 +6,13 @@ ABOUT COMPONENT
   background-color: $main-background;
   margin: 0 auto;
   height: auto;
-  padding: 2rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   z-index: 5;
   @include respond(small-phone) {
-    height: 80rem;
-  }
-  @include respond(small-phone, landscape) {
-    padding: 3rem 0;
-  }
-  @include respond(medium-phone) {
-    padding: 3rem 0;
-  }
-  @include respond(large-phone) {
-    padding: 3rem 0;
-  }
-  @include respond(tablet) {
-    padding: 3rem;
+    height: 75rem;
   }
   @include respond(tablet, landscape) {
     padding: 5rem;
@@ -32,70 +20,35 @@ ABOUT COMPONENT
   @include respond(desktop) {
     padding: 8rem;
   }
-}
-
-.content {
-  display: grid;
-  grid-gap: 1rem;
-  padding: 2rem;
-  height: 100%;
-  grid-template-rows: 40% 1fr;
-
-  align-self: center;
-
-  @include respond(small-phone, landscape) {
-    grid-template-columns: 1fr 1fr;
+  & .content {
+    display: grid;
     grid-template-rows: 1fr;
-  }
-  @include respond(medium-phone) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  @include respond(large-phone) {
+    grid-template-columns: 40% 1fr;
+    padding: 2rem;
     grid-gap: 2rem;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  @include respond(large-phone, landscape) {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-  }
-  @include respond(tablet) {
-    grid-gap: 3rem;
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: 1fr;
-  }
-  @include respond(tablet, landscape) {
-    grid-gap: 4rem;
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: 1fr;
-  }
-  @include respond(desktop) {
-    grid-gap: 5rem;
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: 1fr;
+    height: 100%;
+    align-self: center;
+    @include respond(small-phone) {
+      grid-template-rows: 40% 1fr;
+      grid-template-columns: 1fr;
+    }
+    @include respond(tablet) {
+      grid-gap: 3rem;
+    }
+    @include respond(tablet, landscape) {
+      grid-gap: 4rem;
+    }
+    @include respond(desktop) {
+      grid-gap: 5rem;
+    }
   }
 }
-
 .img-container {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: all 1s;
-  & .img {
-    display: flex;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-
+  @include img-container;
+  & .img-frame {
+    @include img-frame;
     & img {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      @include imgGrayScale;
+      @include img;
       &:hover {
         @include imgAnimation;
       }

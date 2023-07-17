@@ -9,9 +9,50 @@ HEADER COMPONENTS
   height: 4rem;
   background-color: $background-header;
   z-index: 10000;
-  @include boxShadow;
+  @include boxShadow-ligth;
   @include respond(desktop) {
     height: 5rem;
+  }
+  & ul {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    max-width: 100%;
+    & li {
+      display: flex;
+      position: relative;
+    }
+    & a {
+      cursor: pointer;
+      display: flex;
+      justify-self: center;
+      margin-bottom: 0.3rem;
+      @include font-link;
+      &:hover {
+        @include linkHover;
+      }
+    }
+
+    & li::after {
+      content: "";
+      background-color: $light-fontColor;
+      width: 0%;
+      height: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all 0.8s;
+
+      @include respond(desktop) {
+        height: 3px;
+      }
+    }
+
+    & li:hover::after {
+      width: 100%;
+    }
   }
 }
 .sticky {
@@ -19,47 +60,6 @@ HEADER COMPONENTS
   position: fixed;
   top: 0;
 }
-ul {
-  display: flex;
-  text-transform: uppercase;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 100%;
-  max-width: 100%;
 
-  & li {
-    display: flex;
-    position: relative;
-  }
-  & a {
-    cursor: pointer;
-    display: flex;
-    justify-self: center;
-    margin-bottom: 0.3rem;
-    @include font-link;
-    &:hover {
-      @include linkHover;
-    }
-  }
-
-  & li::after {
-    content: "";
-    background-color: $light-fontColor;
-    width: 0%;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: all 1s;
-
-    @include respond(desktop) {
-      height: 3px;
-    }
-  }
-
-  & li:hover::after {
-    width: 100%;
-  }
-}
 /*========================
 ========================*/

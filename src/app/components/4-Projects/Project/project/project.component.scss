@@ -2,15 +2,7 @@
 /*========================
 PROJECT COMPONENT
 ========================*/
-app-support {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-}
-
 .project-container {
-  position: relative;
   min-height: 50rem;
   display: flex;
   flex-direction: column;
@@ -18,10 +10,6 @@ app-support {
   justify-content: center;
   background-color: $main-background;
 }
-.project {
-  height: 100%;
-}
-
 strong {
   color: $strong2-fontColor;
 }
@@ -39,7 +27,7 @@ strong {
     @include font-size-p;
   }
   & img {
-    border-radius: 15px;
+    @include img;
   }
 
   &--2 {
@@ -47,12 +35,9 @@ strong {
     grid-template-columns: 1fr 1fr;
 
     & p {
-      padding: 3rem;
-      @include respond(large-phone) {
-        padding: 5rem 0;
-      }
-      @include respond(tablet) {
-        padding: 5rem;
+      padding: 5rem;
+      @include respond(small-phone) {
+        padding: 3rem 0;
       }
       @include respond(tablet, landscape) {
         padding: 7rem;
@@ -67,12 +52,9 @@ strong {
     display: flex;
 
     & p {
-      padding: 3rem;
-      @include respond(large-phone) {
-        padding: 5rem 0;
-      }
-      @include respond(tablet) {
-        padding: 5rem;
+      padding: 5rem;
+      @include respond(small-phone) {
+        padding: 3rem;
       }
       @include respond(tablet, landscape) {
         padding: 7rem;
@@ -88,12 +70,9 @@ strong {
   display: flex;
   flex-direction: column;
   color: $regular-fontColor;
-  padding: 4rem;
-  @include respond(large-phone) {
-    padding: 5rem;
-  }
-  @include respond(tablet) {
-    padding: 5rem;
+  padding: 5rem;
+  @include respond(small-phone) {
+    padding: 4rem;
   }
   @include respond(tablet, landscape) {
     padding: 7rem;
@@ -124,25 +103,12 @@ strong {
   }
 }
 
-.header-img-container,
 .img-container {
-  display: flex;
-}
-.img-container {
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 15px;
-  transition: all 1s;
+  @include img-frame;
   & div {
-    display: flex;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
+    @include img-container;
     & img {
-      opacity: 0.7;
-      transition: all 0.7s;
+      @include img;
       &:hover {
         @include imgAnimation;
       }
@@ -150,39 +116,21 @@ strong {
   }
 }
 img {
-  display: flex;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+  @include img;
+  filter: none;
+  opacity: 1;
 }
 .btn-container {
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
-  width: 80%;
   justify-content: space-evenly;
-  padding: 2rem;
 }
 button {
-  @include boxShadow;
-  border-radius: 12px;
-  display: flex;
-  width: auto;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  background-color: $button1;
-  color: $regular-fontColor;
-  border: none;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: all 0.5s;
-  @include font-link;
-  font-weight: 500 !important;
+  @include button-regular;
 }
 
 button:hover {
-  background-color: $button1-hover;
+  @include button-hover;
 }
 /*========================
 ========================*/

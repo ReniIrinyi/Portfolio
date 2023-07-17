@@ -7,12 +7,14 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/Htmlentity.png",
             "name": "HTML-Entities",
             "url": "http://unicode.e-workers.de/entities.php",
             "info": "All Html-Entities"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/MarkupValidator.png",
             "name": "Markup Validator",
             "url": "https://validator.w3.org/",
             "info": "The validator checks the markup validity"
@@ -25,42 +27,49 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/CssReset.png",
             "name": "Meyerweb Css Reset",
             "url": "https://meyerweb.com/eric/tools/css/reset/",
             "info": "A reset stylesheet to reduce browser inconsistencies"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/Clippy.png",
             "name": "Clippy",
             "url": "https://bennettfeely.com/clippy/",
             "info": "CSS clip-path maker"
           },
           {
             "id": 3,
+            "img": "../assets/img/resources-imgs/Easings.png",
             "name": "Easings",
             "url": "https://easings.net/de",
             "info": "Cheat Sheet für Easing-Funktionen"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/GradientDesigner.png",
             "name": "Gradients",
             "url": "https://gradient-designer.csspost.com/",
             "info": "Gradient Designer"
           },
           {
             "id": 5,
+            "img": "../assets/img/resources-imgs/cssTrick.png",
             "name": "CSS-Tricks",
             "url": "https://css-tricks.com/snippets/css/complete-guide-grid/",
             "info": "A Complete Guide to CSS Grid"
           },
           {
             "id": 6,
+            "img": "../assets/img/resources-imgs/CSSTricksFlexbox.png",
             "name": "CSS-Tricks",
             "url": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
             "info": "A Complete Guide to Flexbox"
           },
           {
             "id": 7,
+            "img": "../assets/img/resources-imgs/PseudoClasses.png",
             "name": "MDN Web Docs",
             "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes?retiredLocale=de",
             "info": "Pseudo-classes"
@@ -73,12 +82,14 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/Angular.png",
             "name": "Angular Docs",
             "url": "https://angular.io/docs",
             "info": "Reference by Angular"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/ShareButtons.png",
             "name": "Share Buttons Component",
             "url": "https://ngx-sharebuttons.netlify.app/share-button-directive",
             "info": "A component to add a collection of share buttons."
@@ -91,6 +102,7 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/Oracle.png",
             "name": "Oracle",
             "url": "https://docs.oracle.com/en/java/",
             "info": "Java Documentation"
@@ -103,12 +115,14 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/Spring.png",
             "name": "Spring",
             "url": "https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#legal",
             "info": "Spring Boot Reference Documentation"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/SpringInitializr.png",
             "name": "Spring initializr",
             "url": "https://start.spring.io/",
             "info": "Initializr generates spring boot project with just what you need to start quickly"
@@ -121,12 +135,14 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/JavaScriptTutorial.png",
             "name": "JavaScript QuerySelector",
             "url": "https://www.javascripttutorial.net/javascript-dom/javascript-queryselector/",
             "info": "How to use the JavaScript querySelector() and querySelectorAll()"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/freecodecamp.png",
             "name": "JS Array Methods",
             "url": "https://www.freecodecamp.org/news/the-javascript-array-handbook/",
             "info": "JS Array Methods Explained with Examples"
@@ -140,30 +156,29 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/Intellij.png",
             "name": "IntelliJ Community Edition",
             "url": "https://www.jetbrains.com/de-de/idea/download/?section=mac",
             "info": "The best free IDE for Java Developement"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/VisualStudioCode.png",
             "name": "Visual Studio Code",
             "url": "https://code.visualstudio.com/",
             "info": "Also very good IDE. I use it for JavaScript and Angular projects"
           },
-          {
-            "id": 3,
-            "name": "Codepen",
-            "url": "https://codepen.io/",
-            "info": "Codepen is an essential tool to quickly test out ideas"
-          },
+
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/Netlify.png",
             "name": "Netlifly",
             "url": "https://www.netlify.com/",
             "info": "Host static websites for free"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/vercel.png",
             "name": "Vercel",
             "url": "https://vercel.com/",
             "info": "Host static websites for free"
@@ -176,42 +191,49 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/Codepen.png",
             "name": "Codepen",
             "url": "https://codepen.io/",
             "info": "Codepen is an essential tool to quickly test out ideas"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/canIUse.png",
             "name": "Can I Use",
             "url": "https://caniuse.com/",
             "info": "Can I use provides up-to-date browser support tables for support of front-end web technologies"
           },
           {
             "id": 3,
+            "img": "../assets/img/resources-imgs/Seorch.png",
             "name": "Seorch",
             "url": "https://seorch.de/",
             "info": "Free Seo-Check"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/frontendChecklist.png",
             "name": "Front-End Checklist",
             "url": "https://frontendchecklist.io/",
             "info": "The Front-End Checklist Application is perfect for modern websites and meticulous developers. "
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/amIResponsive.png",
             "name": "Am I responsive?",
             "url": "https://ui.dev/amiresponsive",
             "info": "A tool for quick screenshots on various Devices"
           },
           {
             "id": 5,
+            "img": "../assets/img/resources-imgs/responsively.png",
             "name": "Responsively",
             "url": "https://responsively.app/",
             "info": "Open-source Tool for responsive design"
           },
           {
             "id": 6,
+            "img": "../assets/img/resources-imgs/Squoosh.png",
             "name": "Squoosh",
             "url": "https://squoosh.app/",
             "info": "Squoosh can reduce file size and maintain high quality"
@@ -224,30 +246,35 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/Hackerrank.png",
             "name": "HackerRank",
             "url": "https://www.hackerrank.com/",
             "info": "Improve your tech and coding skills"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/ICodeThis.png",
             "name": "I code this",
             "url": "https://icodethis.com/",
             "info": "Daily projects you can build to improve your coding skills"
           },
           {
             "id": 3,
+            "img": "../assets/img/resources-imgs/Codewars.png",
             "name": "Codewars",
             "url": "https://www.codewars.com/",
             "info": "Improve your development skills by training with challenging katas"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/devChallenges.png",
             "name": "DevChallenges",
             "url": "https://devchallenges.io/",
             "info": "Great daily Challenges"
           },
           {
             "id": 5,
+            "img": "../assets/img/resources-imgs/Leetcode.png",
             "name": "LeetCode",
             "url": "https://leetcode.com/",
             "info": "Prepare for technical interviews"
@@ -260,48 +287,56 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/MongoDb.png",
             "name": "MongoDB Certifications",
             "url": "https://www.mongodb.com/academia",
             "info": "MongoDB free resources for database knowledge and skills"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/Odin.png",
             "name": "The Odin Project",
             "url": "https://www.theodinproject.com/",
             "info": "Free full stack curriculum"
           },
           {
             "id": 3,
+            "img": "../assets/img/resources-imgs/edX.png",
             "name": "Edx",
             "url": "https://www.edx.org/",
             "info": "MOOC provider"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/epam.png",
             "name": "Epam",
             "url": "https://training.epam.com/",
             "info": "MOOC provider"
           },
           {
             "id": 5,
+            "img": "../assets/img/resources-imgs/freecodecampBootcamp.png",
             "name": "FreeCodeCamp",
             "url": "https://www.freecodecamp.org/learn/",
             "info": "Learn programming for free"
           },
           {
             "id": 6,
+            "img": "../assets/img/resources-imgs/Moocfii.png",
             "name": "Mooc.fi",
             "url": "https://www.mooc.fi/en/",
             "info": "MOOC provider"
           },
           {
             "id": 7,
+            "img": "../assets/img/resources-imgs/Udemy.png",
             "name": "Udemy",
             "url": "https://www.udemy.com/",
             "info": "Various coding bootcamps and courses"
           },
           {
             "id": 8,
+            "img": "../assets/img/resources-imgs/exercism.png",
             "name": "Exercism",
             "url": "https://exercism.org/",
             "info": "Free programming exercises"
@@ -314,33 +349,17 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/cssTrick.png",
             "name": "CSS-Tricks",
             "url": "https://css-tricks.com/",
             "info": "Useful Articles about CSS"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/Stackoverflow.png",
             "name": "StackOverFlow",
             "url": "https://stackoverflow.com/",
             "info": "Community for Developers"
-          },
-          {
-            "id": 3,
-            "name": "Reddit - SideProject",
-            "url": "https://www.reddit.com/r/SideProject/",
-            "info": "Community for sharing side projects"
-          },
-          {
-            "id": 4,
-            "name": "Makers",
-            "url": "https://make.rs/",
-            "info": "Show the world what you´ve done"
-          },
-          {
-            "id": 5,
-            "name": "Indie Hackers",
-            "url": "https://www.indiehackers.com/start",
-            "info": "Read about indie hackers"
           }
         ]
       },
@@ -349,25 +368,22 @@
         "name": "Images",
         "resources": [
           {
-            "id": 1,
-            "name": "Brandbird",
-            "url": "https://www.brandbird.app/?via=mokkapps",
-            "info": "BrandBird turns your screenshots into captivating graphics"
-          },
-          {
             "id": 2,
+            "img": "../assets/img/resources-imgs/unsplash.png",
             "name": "Unsplash",
             "url": "https://unsplash.com/de",
             "info": "Free Images and Photos"
           },
           {
             "id": 3,
+            "img": "../assets/img/resources-imgs/coverr.png",
             "name": "Coverr",
             "url": "https://coverr.co/",
             "info": "Free Stock Videos"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/videezy.png",
             "name": "Videezy",
             "url": "https://www.videezy.com/",
             "info": "Free Hd Stock Footage & Videos"
@@ -380,6 +396,7 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/svgrepo.png",
 
             "name": "SVG REPO",
             "url": "https://www.svgrepo.com/",
@@ -387,6 +404,7 @@
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/heroicons.png",
 
             "name": "Heroicons",
             "url": "https://heroicons.com/",
@@ -394,6 +412,7 @@
           },
           {
             "id": 3,
+            "img": "../assets/img/resources-imgs/googlefonts.png",
 
             "name": "Google Fonts",
             "url": "https://fonts.google.com/",
@@ -401,6 +420,7 @@
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/typescale.png",
 
             "name": "TypeScale",
             "url": "https://typescale.com/",
@@ -413,34 +433,22 @@
         "name": "Colors",
         "resources": [
           {
-            "id": 1,
-
-            "name": "Open Color",
-            "url": "https://yeun.github.io/open-color/",
-            "info": "Open color is an open-source color scheme"
-          },
-          {
-            "id": 2,
-
-            "name": "Flat UI Colors",
-            "url": "https://flatuicolors.com/",
-            "info": "Open-source color scheme"
-          },
-          {
             "id": 3,
-
+            "img": "../assets/img/resources-imgs/tintandshades.png",
             "name": "Make Tint and Shades",
             "url": "https://maketintsandshades.com/",
             "info": "Tint & Shade Generator"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/colors.png",
             "name": "Colors",
             "url": "https://coolors.co/",
             "info": "Color palettes generator"
           },
           {
             "id": 5,
+            "img": "../assets/img/resources-imgs/colorcontrast.png",
             "name": "Colors",
             "url": "https://coolors.co/contrast-checker/112a46-acc8e5",
             "info": "Color Contrast Checker"
@@ -454,39 +462,25 @@
         "resources": [
           {
             "id": 1,
+            "img": "../assets/img/resources-imgs/onepageLove.png",
             "name": "One Page Love",
             "url": "https://onepagelove.com/",
             "info": "One Page website inspiration, templates and resources"
           },
           {
             "id": 2,
+            "img": "../assets/img/resources-imgs/awwards.png",
             "name": "Awwwards",
             "url": "https://www.awwwards.com/",
             "info": "Follow what's brand new in digital design"
           },
-          {
-            "id": 3,
-            "name": "Screenlane",
-            "url": "https://screenlane.com/",
-            "info": "Web and mobile UI"
-          },
+
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/landbook.png",
             "name": "Landbook",
             "url": "https://land-book.com/",
             "info": "Website design inspiration Gallery"
-          },
-          {
-            "id": 5,
-            "name": "The Startup Pitch",
-            "url": "https://thestartuppitch.com/category/pitches/",
-            "info": "DIY Startup news"
-          },
-          {
-            "id": 6,
-            "name": "The Startup Base",
-            "url": "https://startupbase.io/",
-            "info": "Discover new Startups"
           }
         ]
       },
@@ -495,61 +489,57 @@
         "name": "Useful",
         "resources": [
           {
-            "id": 1,
-            "name": "Asciinema",
-            "url": "https://asciinema.org/",
-            "info": "Record and share your terminal sessions, the simple way"
-          },
-          {
-            "id": 2,
-            "name": "Svg-Path Editor",
-            "url": "https://yqnn.github.io/svg-path-editor/",
-            "info": "Creating individual Svg's"
-          },
-          {
             "id": 3,
+            "img": "../assets/img/resources-imgs/textToASCII.png",
             "name": "Text to ASCII Art",
             "url": "https://patorjk.com/",
             "info": "Write ASCII-Art"
           },
           {
             "id": 4,
+            "img": "../assets/img/resources-imgs/Roadmap.png",
             "name": "Roadmaps for Developers",
             "url": "https://roadmap.sh/frontend",
             "info": "Step by step guide to becoming a better Developer"
           },
           {
             "id": 5,
+            "img": "../assets/img/resources-imgs/dogAPI.png",
             "name": "Dog API",
             "url": "https://dog.ceo/dog-api/about",
             "info": "Original dataset taken from the the Stanford Dogs Dataset"
           },
           {
             "id": 5,
+            "img": "../assets/img/resources-imgs/Json.png",
             "name": "JSON Formatter",
             "url": "https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa",
             "info": "Makes JSON easy to read"
           },
           {
             "id": 6,
+            "img": "../assets/img/resources-imgs/mermaid.png",
             "name": "Mermaid",
             "url": "https://mermaid.js.org/",
             "info": "Diagramming and charting tool"
           },
           {
             "id": 7,
+            "img": "../assets/img/resources-imgs/transform.png",
             "name": "Transform",
             "url": "https://transform.tools/js-object-to-json",
             "info": "A polyglot web converter"
           },
           {
             "id": 8,
+            "img": "../assets/img/resources-imgs/sasshub.png",
             "name": "Sasshub",
             "url": "https://www.saashub.com/",
             "info": "Software alternatives and Reviews"
           },
           {
             "id": 9,
+            "img": "../assets/img/resources-imgs/GithubCheatSheat.png",
             "name": "GitHub",
             "url": "https://education.github.com/git-cheat-sheet-education.pdf",
             "info": "Git Cheat Sheet"

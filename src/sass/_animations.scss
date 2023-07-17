@@ -1,20 +1,6 @@
 /*========================
 ANIMATIONS
 ========================*/
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: rotate(0) translateX(250px) rotate(0);
-  }
-}
-
-@mixin iconAnimation($translateX, $i) {
-  $angle: -30deg * ($i + 1);
-  $delay: $i * 2s;
-  animation-delay: $delay;
-  transform: rotate(#{$angle}) translateX($translateX) rotate(#{-$angle});
-}
-
 @keyframes rotateAndDisappear {
   0% {
     transform: rotate(0);
@@ -36,7 +22,21 @@ ANIMATIONS
 @mixin imgGrayScale() {
   filter: grayscale(0.6);
   opacity: 0.6;
-  transition: all 0.7s;
+  transition: all 0.5s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: scale(1.1);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 /*========================
 ========================*/

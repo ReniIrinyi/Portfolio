@@ -1,3 +1,4 @@
+<!-- resources-component -->
 <div class="resources-container" id="resources">
   <nav>
     <ul>
@@ -5,34 +6,39 @@
         <a
           (click)="scrollTo(category.name.toLowerCase())"
           href="javascript:void(0)"
-          ><i class="group-nav--icon"></i>{{ category.name }}</a
+          >{{ category.name }}</a
         >
       </li>
     </ul>
   </nav>
   <section
     *ngFor="let category of categories"
-    class="container"
+    class="categories-container"
     id="{{ category.name.toLowerCase() }}"
   >
     <h3>{{ category.header }}</h3>
-    <ng-container
-      *ngFor="let resource of getResourcesByCategory(category.name)"
-    >
-      <div class="resources-item">
-        <a href="{{ resource.url }}" target="_blank">
-          <p>
-            {{ resource.name }}
-          </p>
-          <p>{{ resource.info }}</p>
+    <div class="category-item-container">
+      <ng-container
+        *ngFor="let resource of getResourcesByCategory(category.name)"
+      >
+        <a class="item" href="{{ resource.url }}" target="_blank">
+          <img class="item-img" src="{{ resource.img }}" alt="" />
+          <div class="item-text">
+            <div class="item-text-container">
+              <p>
+                {{ resource.name }}
+              </p>
+              <p>{{ resource.info }}</p>
+            </div>
+          </div>
         </a>
-      </div>
-    </ng-container>
+      </ng-container>
+    </div>
   </section>
   <div (click)="scrollTo('resources')" class="button-container">
-    <a (click)="scrollTo('resources')" href="javascript:void(0)">
+    <a href="javascript:void(0)">
       <fa-icon class="svg" [icon]="faArrowUp"></fa-icon>
     </a>
   </div>
 </div>
-<app-sharebuttons></app-sharebuttons>
+<!-- resources-component ends -->

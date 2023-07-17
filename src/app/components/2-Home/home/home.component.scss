@@ -2,14 +2,6 @@
 /*========================
 HOME COMPONENT
 ========================*/
-
-app-support {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  right: 0;
-  z-index: 100;
-}
 .home-container {
   position: relative;
   height: 40rem;
@@ -23,14 +15,14 @@ app-support {
   @include respond(desktop) {
     height: 60rem;
   }
-}
-video {
-  position: absolute;
-  z-index: 0;
-  object-fit: cover;
-  opacity: 0.9;
-  width: 100%;
-  height: 100%;
+  & video {
+    position: absolute;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+  }
 }
 .body {
   position: absolute;
@@ -38,13 +30,13 @@ video {
   height: 100%;
   z-index: 1;
 }
-.home-text-container {
+.text-container {
+  color: $regular-fontColor;
   display: flex;
   position: absolute;
   flex-direction: column;
   align-items: flex-start;
   z-index: 3;
-  color: $regular-fontColor;
   top: 30%;
   padding-left: 3rem;
   justify-self: center;
@@ -63,11 +55,17 @@ h2 {
 }
 
 p {
-  @include font-size-p;
+  @include font-size-p-big;
 }
 h2 span {
   line-height: $line-height-big;
 }
-
+app-support {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+}
 /*========================
 ========================*/

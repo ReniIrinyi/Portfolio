@@ -1,42 +1,35 @@
 @import "../../../../styles.scss";
-
+/*========================
+SUPPORT COMPONENT
+========================*/
 .support-container {
   display: flex;
   justify-content: flex-end;
   padding: 2rem;
 }
 .support-panel {
-  display: flex;
-  cursor: pointer;
+  @include button-regular;
+  @include font-size-p;
   animation: bounce 5s infinite;
-  text-decoration: none;
-  border-radius: 10px;
   background-color: $support-background;
-  padding: 0.5rem;
-}
-.support-panel img {
-  transition: all 1s;
-  height: 1.5rem;
-  width: 1.5rem;
-  margin-right: 0.5rem;
-}
-
-.support-panel p {
-  color: $white-light;
-  align-self: center;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
+  border-radius: $border-radius-xl;
+  text-transform: none;
+  @include respond(small-phone) {
+    border-radius: $border-radius-regular;
   }
-  10% {
-    transform: scale(1.1);
+  & img {
+    transition: all 1s;
+    height: 1.7rem;
+    width: 1.7rem;
+    margin-right: 0.5rem;
+    @include respond(small-phone) {
+      height: 1.4rem;
+      width: 1.4rem;
+    }
   }
-  20% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
+  & p {
+    text-align: center;
   }
 }
+/*========================
+========================*/

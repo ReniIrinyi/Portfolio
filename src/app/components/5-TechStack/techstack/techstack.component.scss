@@ -4,30 +4,18 @@ TECHSTACK COMPONENT
 ========================*/
 .techstack-container {
   background-color: $main-background;
-  height: 60rem;
+  height: 80rem;
   display: flex;
   flex-direction: column;
   position: relative;
-  @include respond(large-phone) {
-    height: 50rem;
-  }
-  @include respond(tablet) {
-    height: 60rem;
-  }
-  @include respond(tablet, landscape) {
-    height: 50rem;
-  }
-  @include respond(desktop) {
+  @include respond(small-phone) {
     height: 70rem;
   }
 }
+
 .header {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  @include respond(desktop) {
-    margin-top: 4rem;
-  }
 }
 h1 {
   color: $light-fontColor;
@@ -67,13 +55,22 @@ video {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+
   &-header {
     display: flex;
     flex-direction: row;
+    align-content: center;
+    padding: 1rem 0;
+
+    & fa-icon {
+      @include font-size-p;
+      margin-bottom: 0.2rem;
+    }
 
     & h2 {
       color: $regular-fontColor;
       text-transform: uppercase;
+      @include font-size-p;
     }
   }
   &-icons {
@@ -91,17 +88,19 @@ video {
   background-color: $silber-light;
   transition: all 0.5s;
   padding: 1.7rem;
-  width: 3rem;
-  height: 3rem;
+  width: 6rem;
+  height: 6rem;
   margin: 0.2rem;
   border-radius: $border-radius-small;
   text-decoration: none;
 
   &:hover {
-    filter: brightness(1.5);
-    box-shadow: 0px 1px 15px 1px #000000bd;
+    @include hover;
   }
-
+  @include respond(small-phone) {
+    width: 3rem;
+    height: 3rem;
+  }
   & p {
     color: $white-light;
     margin: 0.2rem 0;
@@ -109,45 +108,14 @@ video {
   }
 }
 .svg {
-  width: 1.7rem;
-  height: 1.7rem;
+  width: 3rem;
+  height: auto;
   filter: invert(0.8);
-  @include respond(large-phone) {
-    width: 5rem;
-    width: 5rem;
-  }
-  @include respond(large-phone, landscape) {
-    width: 5rem;
-    width: 5rem;
-  }
-  @include respond(tablet) {
-    width: 5rem;
-    width: 5rem;
-  }
-
-  @include respond(desktop) {
-    width: 5rem;
-    width: 5rem;
+  @include respond(small-phone) {
+    width: 2rem;
+    height: 2rem;
   }
 }
 
-// @for $i from 1 through 12 {
-//   .stack__icons a:nth-child(#{$i}) {
-//     @include iconAnimation(70px, $i);
-
-//     @include respond(large-phone) {
-//       @include iconAnimation(100px, $i);
-//     }
-//     @include respond(large-phone, landscape) {
-//       @include iconAnimation(100px, $i);
-//     }
-//     @include respond(tablet) {
-//       @include iconAnimation(130px, $i);
-//     }
-//     @include respond(desktop) {
-//       @include iconAnimation(130px, $i);
-//     }
-//   }
-// }
 /*========================
 ========================*/

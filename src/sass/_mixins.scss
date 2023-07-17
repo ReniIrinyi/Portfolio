@@ -1,13 +1,44 @@
 /*========================
 MIXINS
 ========================*/
+@mixin button-regular {
+  cursor: pointer;
+  @include font-link;
+  font-weight: 500 !important;
+  @include boxShadow-ligth;
+  color: $regular-fontColor;
+  background-color: $button1;
+  border-radius: $border-radius-regular;
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  @include respond(small-phone) {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@mixin button-hover {
+  background-color: $button1-hover;
+  @include boxShadow-dark;
+}
+
+@mixin hover {
+  filter: brightness(1.5);
+  @include boxShadow-dark;
+}
 
 @mixin linkHover {
   color: $white;
-  transition: all 0.5s;
 }
 
-@mixin boxShadow() {
+@mixin boxShadow-dark {
+  box-shadow: 0px 1px 15px 1px #000000bd;
+}
+@mixin boxShadow-ligth {
   box-shadow: -1px 5px 12px 2px #0b202791;
 }
 
@@ -26,7 +57,29 @@ MIXINS
 }
 @mixin svgHover() {
   transform: scale(1.1);
-  transition: all ease-in-out 0.5s;
+  transition: all ease 0.5s;
+}
+
+@mixin img-container() {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: $border-radius-regular;
+  transition: all 0.5s;
+}
+@mixin img-frame() {
+  display: flex;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+@mixin img() {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  @include imgGrayScale;
 }
 
 /*========================

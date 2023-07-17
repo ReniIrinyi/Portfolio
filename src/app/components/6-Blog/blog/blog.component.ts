@@ -33,6 +33,7 @@ export class BlogComponent implements OnInit {
     this.projectDataService.getPosts().subscribe(
       (posts) => {
         this.posts = posts;
+        this.selectedPost = this.projectDataService.getSelectedPost();
       },
       (error) => {
         console.error("Error fetching projects:", error);
@@ -43,7 +44,11 @@ export class BlogComponent implements OnInit {
   selectPost(post: any) {
     this.selectedPost = this.posts.find((p) => p.id == post.id);
     this.projectDataService.setSelectedPost(this.selectedPost);
-    console.log(this.selectedPost);
+    const leftContainer = document.querySelector(".right");
+
+    if (leftContainer && this.selectedPost) {
+      leftContainer.classList.add("show");
+    }
   }
   //subscribe to the isSticky$ observable from ScrollService
   private subscribeToIsSticky(): void {

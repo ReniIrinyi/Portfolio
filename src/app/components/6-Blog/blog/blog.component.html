@@ -3,7 +3,7 @@
     <p>Recent posts</p>
 
     <div class="sidebar" *ngFor="let post of posts">
-      <ul>
+      <ul (click)="selectPost(post)">
         <li>
           <a (click)="selectPost(post)" [routerLink]="'/blog/:' + post.id">{{
             post.name
