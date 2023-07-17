@@ -23,7 +23,7 @@ app-support {
 }
 
 strong {
-  color: $strong-fontColor;
+  color: $strong2-fontColor;
 }
 .description {
   display: flex;
@@ -141,7 +141,7 @@ strong {
     height: 100%;
     width: 100%;
     & img {
-      opacity: 0.6;
+      opacity: 0.7;
       transition: all 0.7s;
       &:hover {
         @include imgAnimation;

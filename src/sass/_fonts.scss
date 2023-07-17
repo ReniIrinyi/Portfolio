@@ -19,6 +19,7 @@ $fontSize-h3-desktop: 2.7rem;
 $fontSize-h4-regular: 1.6rem;
 $fontSize-h4-desktop: 2.6rem;
 
+$fontSize-p-xxs: 0.6rem;
 $fontSize-p-tiny: 0.8rem;
 $fontSize-p-small: 1rem;
 $fontSize-p-regular: 1.4rem;
@@ -70,6 +71,21 @@ $line-height-small: 1.3;
   }
   @include respond(desktop) {
     font-size: $fontSize-p-desktop;
+  }
+}
+@mixin font-size-p-xxs {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: $fontSize-p-xxs;
+  line-height: 1.15;
+  @include respond(small-phone) {
+    font-size: $fontSize-p-small;
+  }
+  @include respond(medium-phone) {
+    font-size: $fontSize-p-small;
+  }
+  @include respond(desktop) {
+    font-size: $fontSize-p-big;
   }
 }
 @mixin font-size-p-tiny {

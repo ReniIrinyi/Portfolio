@@ -1,27 +1,17 @@
-import { Component } from '@angular/core';
-import { faJava } from '@fortawesome/free-brands-svg-icons';
-import { faGitAlt } from '@fortawesome/free-brands-svg-icons';
-import { faJs } from '@fortawesome/free-brands-svg-icons';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
-import { faSass } from '@fortawesome/free-brands-svg-icons';
-import { faAngular } from '@fortawesome/free-brands-svg-icons';
-import { faReact } from '@fortawesome/free-brands-svg-icons';
-import { faNode } from '@fortawesome/free-brands-svg-icons';
-import { faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
+import { Component } from "@angular/core";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faScrewdriverWrench } from "@fortawesome/free-solid-svg-icons";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { faMagicWandSparkles } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
-  selector: 'app-techstack',
-  templateUrl: './techstack.component.html',
-  styleUrls: ['./techstack.component.scss'],
+  selector: "app-techstack",
+  templateUrl: "./techstack.component.html",
+  styleUrls: ["./techstack.component.scss"],
 })
 export class TechStackComponent {
-  faJava = faJava;
-  faGitAlt = faGitAlt;
-  faJs = faJs;
-  faHtml5 = faHtml5;
-  faSass = faSass;
-  faAngular = faAngular;
-  faReact = faReact;
-  faNode = faNode;
-  faWordpressSimple = faWordpressSimple;
+  faDatabase = faDatabase;
+  faScrewdriverWrench = faScrewdriverWrench;
+  faCode = faCode;
+  faMagicWandSparkles = faMagicWandSparkles;
 }

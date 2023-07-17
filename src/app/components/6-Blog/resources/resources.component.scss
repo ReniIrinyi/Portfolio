@@ -104,5 +104,6 @@ li:hover {
 }
 
 .resources-item:hover {
-  scale: 1.05;
+  filter: brightness(1.5);
+  box-shadow: 0px 1px 15px 1px #000000bd;
 }

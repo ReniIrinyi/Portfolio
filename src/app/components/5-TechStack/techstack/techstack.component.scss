@@ -4,7 +4,7 @@ TECHSTACK COMPONENT
 ========================*/
 .techstack-container {
   background-color: $main-background;
-  height: 40rem;
+  height: 60rem;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -43,12 +43,6 @@ h1 {
 strong {
   color: $techstack-highlight-fontColor;
 }
-.tech-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
 video {
   z-index: 0;
   top: 0;
@@ -58,83 +52,102 @@ video {
   position: absolute;
   opacity: 0.1;
 }
-
-.stack__icons {
+.tech-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
-  z-index: 1;
-  position: relative;
   height: 100%;
+}
 
-  & .svg {
-    transition: all 1s;
-    width: 3rem;
-    height: 3rem;
-    margin: 2px;
+.stack-container {
+  padding: 2rem;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  &-header {
+    display: flex;
+    flex-direction: row;
+
+    & h2 {
+      color: $regular-fontColor;
+      text-transform: uppercase;
+    }
   }
-  & .svg:hover {
-    @include svgHover;
+  &-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+}
+.svg-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: $silber-light;
+  transition: all 0.5s;
+  padding: 1.7rem;
+  width: 3rem;
+  height: 3rem;
+  margin: 0.2rem;
+  border-radius: $border-radius-small;
+  text-decoration: none;
+
+  &:hover {
+    filter: brightness(1.5);
+    box-shadow: 0px 1px 15px 1px #000000bd;
   }
 
-  & a {
-    filter: invert(0.8);
-    position: absolute;
-    transition: all 1s;
-    opacity: 1;
-    top: calc(50% - 27px);
-    left: calc(56% - 45px);
-    animation: slideIn 10s 4s ease both;
+  & p {
+    color: $white-light;
+    margin: 0.2rem 0;
+    @include font-size-p-xxs;
+  }
+}
+.svg {
+  width: 1.7rem;
+  height: 1.7rem;
+  filter: invert(0.8);
+  @include respond(large-phone) {
+    width: 5rem;
+    width: 5rem;
+  }
+  @include respond(large-phone, landscape) {
+    width: 5rem;
+    width: 5rem;
+  }
+  @include respond(tablet) {
+    width: 5rem;
+    width: 5rem;
+  }
 
-    @include respond(small-phone, landscape) {
-      left: calc(53% - 45px);
-    }
-    @include respond(medium-phone, landscape) {
-      left: calc(52% - 45px);
-    }
-    @include respond(large-phone) {
-      left: calc(53% - 45px);
-      width: 5rem;
-      width: 5rem;
-    }
-    @include respond(large-phone, landscape) {
-      left: calc(52% - 45px);
-      width: 5rem;
-      width: 5rem;
-    }
-    @include respond(tablet) {
-      left: calc(52% - 45px);
-      width: 5rem;
-      width: 5rem;
-    }
-    @include respond(tablet, landscape) {
-      left: calc(52% - 45px);
-    }
-    @include respond(desktop) {
-      left: calc(52% - 45px);
-      width: 5rem;
-      width: 5rem;
-    }
+  @include respond(desktop) {
+    width: 5rem;
+    width: 5rem;
   }
 }
 
-@for $i from 1 through 12 {
-  .stack__icons a:nth-child(#{$i}) {
-    @include iconAnimation(70px, $i);
+// @for $i from 1 through 12 {
+//   .stack__icons a:nth-child(#{$i}) {
+//     @include iconAnimation(70px, $i);
 
-    @include respond(large-phone) {
-      @include iconAnimation(100px, $i);
-    }
-    @include respond(large-phone, landscape) {
-      @include iconAnimation(100px, $i);
-    }
-    @include respond(tablet) {
-      @include iconAnimation(130px, $i);
-    }
-    @include respond(desktop) {
-      @include iconAnimation(130px, $i);
-    }
-  }
-}
+//     @include respond(large-phone) {
+//       @include iconAnimation(100px, $i);
+//     }
+//     @include respond(large-phone, landscape) {
+//       @include iconAnimation(100px, $i);
+//     }
+//     @include respond(tablet) {
+//       @include iconAnimation(130px, $i);
+//     }
+//     @include respond(desktop) {
+//       @include iconAnimation(130px, $i);
+//     }
+//   }
+// }
 /*========================
 ========================*/

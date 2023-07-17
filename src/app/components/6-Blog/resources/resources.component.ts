@@ -18,20 +18,21 @@ export class ResourcesComponent implements OnInit {
   ) {}
   private resourcesUrl = "../../../../assets/resources.json";
   resources: Resources[] = [];
-  // categories: string[] = [];
-  // headers: string[] = [];
   allResource: Resource[] = [];
   categories: Category[] = [];
   faArrowUp = faArrowUp;
 
   ngOnInit(): void {
+    this.fetchResources();
+  }
+
+  private fetchResources() {
     this.getRessources().subscribe((ressource) => {
       this.resources = ressource;
       // this.categories = this.resources[0].categories.map((cat) => cat.name);
       this.categories = this.getCategory();
       this.allResource = this.getResource();
       this.componentService.setComponentStatus(true);
-      console.log(this.categories);
     });
   }
   getRessources(): Observable<Resources[]> {

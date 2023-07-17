@@ -10,6 +10,8 @@ import {
 import { ProjectDataService } from "src/app/Service/ProjectDataService";
 import { ComponentService } from "src/app/Service/ComponentService";
 import { Project } from "src/app/Model/Project";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 @Component({
   selector: "app-project",
   templateUrl: "./project.component.html",
@@ -29,6 +31,8 @@ export class ProjectComponent implements OnInit {
     private componentService: ComponentService
   ) {}
 
+  faGithub = faGithub;
+  faShare = faGlobe;
   loading = true;
   isSticky = false;
   projects: Project[] = [];
