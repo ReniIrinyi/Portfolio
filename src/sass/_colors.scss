@@ -25,12 +25,15 @@ $rose: #ffafcc;
 $rose-dark: #97516a;
 
 //GREEN
+$green-light3: #d3d6c0;
+$green-light2: #d3d6c0c0;
 $green-light: #cfd7c7;
 $green-regular: #d3d6c0;
 $green: #bec1a0;
 $green-dark: #929861;
 
 //OLIVE
+$olive-light4: #3068548f;
 $olive-light3: #619883;
 $olive-light2: #75ba9f;
 $olive-light1: #4f7e78;
@@ -51,7 +54,7 @@ $strong-fontColor: $olive-light1;
 $strong2-fontColor: $blue-light;
 
 //SUPPORT HEADER
-$support-background: #306854a8;
+$support-background: $olive-light4;
 
 //BUTTON-BACKGROUND-COLORS
 $button1: $olive-light3;
@@ -65,12 +68,15 @@ $main-background: $blue-regular2;
 $background-header: $olive-light1;
 
 //HOME
-$home-highlight-fontColor: $white;
+$home-highlight-fontColor: $green-light3;
 
 //ABOUT
 $background-about: $olive-dark3;
+$strong-about: $green-light3;
 
 //TECHSTACK
+$stack-header: $green-light2;
+$header-icons: $green-light2;
 $techstack-highlight-fontColor: $olive-light2;
 
 //PROJECTS
@@ -80,8 +86,8 @@ $background-projects: $white-light;
 //RESOURCES
 $grey-fontColor: $blue-light;
 $black-fontColor: $olive-dark1;
-$background-light: #3068548f;
-$background-light-item: #d3d6c0c0;
+$background-light: $olive-light4;
+$background-light-item: $green-light2;
 $header-resources: $blue-light2;
 $item-background: $silber-light;
 

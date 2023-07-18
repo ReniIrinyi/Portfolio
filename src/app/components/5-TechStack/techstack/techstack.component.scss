@@ -65,10 +65,12 @@ video {
     & fa-icon {
       @include font-size-p;
       margin-bottom: 0.2rem;
+      filter: invert(0);
+      color: $header-icons;
     }
 
     & h2 {
-      color: $regular-fontColor;
+      color: $stack-header;
       text-transform: uppercase;
       @include font-size-p;
     }
@@ -83,7 +85,7 @@ video {
 .svg-container {
   display: flex;
   flex-direction: column;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   background-color: $silber-light;
   transition: all 0.5s;
@@ -102,12 +104,15 @@ video {
     height: 3rem;
   }
   & p {
-    color: $white-light;
-    margin: 0.2rem 0;
     @include font-size-p-xxs;
+    font-weight: 200 !important;
+    color: $white-light;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
   }
 }
 .svg {
+  display: flex;
   width: 3rem;
   height: auto;
   filter: invert(0.8);
