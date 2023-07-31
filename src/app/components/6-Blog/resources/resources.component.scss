@@ -15,7 +15,7 @@ ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: $background-light;
+  background-color: $buttons-background;
   padding: 1rem;
 }
 
@@ -129,7 +129,7 @@ li:hover {
 
 .button-container {
   @include button-regular;
-  background-color: $olive-light3;
+  background-color: $resource-button;
   border-radius: 0;
   & a {
     color: $black-fontColor;

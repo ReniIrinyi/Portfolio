@@ -1,12 +1,7 @@
 /*========================
 COLORS
 ========================*/
-//WHITE
-$white: #fff;
-$white-light: #f0eff5;
-$white-rose: #fbf1f5;
-$white-grey: rgb(189, 187, 201);
-
+//OLIVE-THEME-COLORS
 //BLUE
 $blue-light: #afbec6;
 $blue-light1: #b8dbd9;
@@ -45,7 +40,91 @@ $olive-dark1: #0a100e;
 //SILBER
 $silber-light: #c0c0c055;
 $silber: #c0c0c0;
+//WHITE
+$white: #fff;
+$white-light: #f0eff5;
+$white-rose: #fbf1f5;
+$white-grey: rgb(189, 187, 201);
+$platin: #cfd5d7;
 
+//FOREST-THEME-COLORS
+$dim-gray: #6f6d61;
+$dim-gray-light: rgb(196, 193, 171);
+$dim-gray-light2: rgba(196, 193, 171, 0.742);
+$black-olive: #323122;
+$light-olive: #3d4238;
+$black-brown: #493c28;
+$drab-brown: #5c563b;
+$ebony: #4f503a;
+$gummetal: #222e30;
+$davisgrey: #575e60;
+$hookergreen: #65786b;
+$hookergreen2: #699476;
+$hookergreen3: #61826b;
+$hookergreen-light2: rgba(49, 100, 64, 0.647);
+$hookergreen-light: #6a8681;
+$rosedagreen: #667459;
+
+//FOREST-THEME
+
+//FONTS
+$light-fontColor: $white-light;
+$regular-fontColor: $white;
+$strong-fontColor: $hookergreen;
+$strong2-fontColor: $platin;
+
+//SUPPORT HEADER
+$support-background: $hookergreen-light2;
+
+//BUTTON-BACKGROUND-COLORS
+$button1: $hookergreen3;
+$button1-hover: $hookergreen2;
+
+//BACKGROUND
+$html-background: $olive-dark1;
+$main-background: $light-olive;
+$background-dark: $gummetal;
+
+//HEADER
+$background-header: $hookergreen;
+
+//HOME
+$home-highlight-fontColor: $platin;
+
+//ABOUT
+
+$background-about: $hookergreen3;
+$strong-about: $platin;
+
+//BLOG
+$blog-border: $platin;
+$blog-hover: $hookergreen3;
+
+//TECHSTACK
+$stack-header: $platin;
+$header-icons: $platin;
+$techstack-highlight-fontColor: $platin;
+
+//PROJECTS
+$projects-header: $gummetal;
+$background-projects: $white-light;
+
+//RESOURCES
+$grey-fontColor: $blue-light;
+$black-fontColor: $olive-dark1;
+$background-light: $hookergreen-light2;
+$background-light-item: $dim-gray-light2;
+$header-resources: $platin;
+$item-background: $silber-light;
+$resource-button: $hookergreen3;
+$buttons-background: $gummetal;
+
+//FOOTER
+$background-footer: $gummetal;
+$footer-fontColor: $platin;
+
+/*
+//OLIVE-THEME
 //FONTS
 $light-fontColor: $white-light;
 $regular-fontColor: $white;
@@ -94,5 +173,6 @@ $item-background: $silber-light;
 //FOOTER
 $background-footer: $olive-dark2;
 $footer-fontColor: $blue-light;
+*/
 /*========================
 ========================*/

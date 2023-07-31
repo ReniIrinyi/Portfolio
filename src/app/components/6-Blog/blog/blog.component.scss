@@ -31,11 +31,13 @@
     display: flex;
     text-decoration: none;
     transition: all 0.5s;
+    border-radius: 5px;
+    padding: 3px;
     color: $light-fontColor;
     margin: 0.5rem 0;
   }
   & a:hover {
-    background-color: $olive-dark3;
+    background-color: $blog-hover;
   }
 }
 .sidebar {
@@ -48,7 +50,7 @@
   transition: all 1s;
   display: flex;
   @include font-size-p-tiny;
-  border-left: solid 0.3px $blue-light1;
+  border-left: solid 0.3px $blog-border;
   flex-direction: column;
   padding: 3.25rem 1rem;
   height: auto;

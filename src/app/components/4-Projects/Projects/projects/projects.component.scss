@@ -9,7 +9,7 @@ PROJECTS COMPONENT
   flex-direction: column;
   padding: 5rem 2rem;
   justify-content: center;
-  background-color: $main-background;
+  background-color: $background-dark;
   @include respond(small-phone) {
     padding: 4rem 0.5rem;
   }
