@@ -20,8 +20,8 @@
   {
     "idNumber": 2,
     "id": "project--2",
-    "github": "https://github.com/ReniIrinyi/PrivateProject---PortfolioPage",
-    "url": "https://private-project-portfolio-page.vercel.app/home",
+    "github": "https://github.com/ReniIrinyi/Portfolio",
+    "url": "https://reniirinyi.vercel.app/home",
     "mockup": "../../../assets/img/projects/PortfolioProject/home.webp",
     "header": "../../../assets/img/projects/PortfolioProject/header.webp",
     "img1": "../../../assets/img/projects/PortfolioProject/projects.webp",
