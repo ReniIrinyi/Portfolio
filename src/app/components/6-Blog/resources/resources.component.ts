@@ -32,7 +32,7 @@ export class ResourcesComponent implements OnInit {
       // this.categories = this.resources[0].categories.map((cat) => cat.name);
       this.categories = this.getCategory();
       this.allResource = this.getResource();
-      this.componentService.setComponentStatus(true);
+      this.componentService.setComponentStatus(false);
     });
   }
   getRessources(): Observable<Resources[]> {

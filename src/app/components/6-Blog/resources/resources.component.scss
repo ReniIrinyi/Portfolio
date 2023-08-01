@@ -6,10 +6,23 @@ RESOURCES COMPONENT
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: $main-background;
+  background-color: $resources-mainbackground;
   position: relative;
 }
-
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 15rem;
+  padding: 2rem;
+  background-color: $header-background;
+  @include font-size-p;
+  color: $regular-fontColor;
+  & h1 {
+    @include font-size-h2;
+    padding-bottom: 1rem;
+  }
+}
 ul {
   max-width: 100%;
   display: flex;

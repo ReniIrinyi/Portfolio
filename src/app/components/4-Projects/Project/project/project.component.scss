@@ -25,6 +25,9 @@ strong {
     justify-self: center;
     align-self: center;
     @include font-size-p;
+    @include respond(small-phone) {
+      @include font-size-p-tiny;
+    }
   }
   & img {
     @include img;
@@ -37,7 +40,7 @@ strong {
     & p {
       padding: 5rem;
       @include respond(small-phone) {
-        padding: 3rem 0;
+        padding: 2rem 1rem;
       }
       @include respond(tablet, landscape) {
         padding: 7rem;
@@ -54,7 +57,7 @@ strong {
     & p {
       padding: 5rem;
       @include respond(small-phone) {
-        padding: 3rem;
+        padding: 2rem;
       }
       @include respond(tablet, landscape) {
         padding: 7rem;

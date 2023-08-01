@@ -1,5 +1,14 @@
 <!-- resources-component -->
 <div class="resources-container" id="resources">
+  <div class="header">
+    <h1>My Resources for Developement</h1>
+    <p>
+      I always spend a lot of time searching for the things needed for
+      development on the internet. This collection is meant to help me find what
+      I'm looking for more easily, and hopefully, it will be useful for you as
+      well.
+    </p>
+  </div>
   <nav>
     <ul>
       <li *ngFor="let category of categories">
@@ -11,6 +20,7 @@
       </li>
     </ul>
   </nav>
+
   <section
     *ngFor="let category of categories"
     class="categories-container"

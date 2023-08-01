@@ -26,7 +26,7 @@
     "header": "../../../assets/img/projects/PortfolioProject/header.webp",
     "img1": "../../../assets/img/projects/PortfolioProject/projects.webp",
     "img2": "../../../assets/img/projects/PortfolioProject/phone.webp",
-    "img3": "../../../assets/img/projects/PortfolioProject/mockup.webp",
+    "img3": "../../../assets/img/projects/PortfolioProject/mockup.png",
     "name": "Portfolio",
     "text": "Since every decent developer has a portfolio, it seemed like a great idea to apply my newly acquired Angular skills to such a project. I really enjoyed the development and tried a bunch of new things and experimented a lot.",
     "conclusion": "The main purpose of the website is to provide a platform where I can showcase a selection of my projects. I aimed to make it dynamic, allowing for easy updates in the future. Additionally, I wanted to include a component that displays a list of all projects, and when you click on a project, it opens the corresponding project details component. Simplicity, transparency, and a design that reflects my personality were also key considerations. The site predominantly features my favorite colors, creating a cohesive and personalized aesthetic.",
