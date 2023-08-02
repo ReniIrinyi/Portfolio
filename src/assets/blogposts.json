@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "date": "16. Jul. 2023",
+    "date": "06. Jul. 2023",
     "name": "Using particles.js as a background with Angular 16",
     "urlDescription": "Particles-Generator",
     "url": "https://vincentgarreau.com/particles.js/",
@@ -24,7 +24,7 @@
   },
   {
     "id": 2,
-    "date": "01. Aug. 2023",
+    "date": "13. Jul. 2023",
     "name": "I completed the Helsinki University's MOOC Java I. Course: Part 1. - Installing and running TMCBeans on Monterey",
     "urlDescription": "Helsinki's MOOC Java I. Course",
     "url": "https://java-programming.mooc.fi/",
@@ -41,8 +41,33 @@
     "img2": "string",
     "short": "When I first considered learning a programming language, I initially looked into free online courses available on the internet because I wasn't sure if I would be genuinely receptive to it or if I could learn it. It was clear to me that I wouldn't immediately dive into a higher-cost expenditure before trying to see if programming was right for me, as I had absolutely no idea about it. I read a lot about which could be the most ideal first language, and opinions varied greatly. Ultimately, I chose Java, partly because I found a fantastic free course offered by the University of Helsinki. The course is relatively old, but I thought it would be perfect to learn the fundamentals of the language and get a sense of the whole programming field. You can find the link to the course at the end of the post.",
     "text": "So, I started the course, and I already faced the first problem. The University of Helsinki uses the TMCBeans IDE, and I couldn't get it to work on Monterey. This post was created to show you how to run TMCBeans on Monterey.",
-    "text2": "First of all, you will need to install Java. Unfortunately, the link in the course description is not working, so simply download and install it directly from the official website. TMCBeans only runs with Java 11, so you need to install it. The next step is to install TMCBeans. In the case of Mac, you may encounter an issue because the file is not trusted/verified. In such a situation, use the Finder to locate the TMCBeans file, and after right-click on it, choosing the 'open' option. This is where my problems started. TMCBeans didn't respond at all, and at first, I didn't understand why.",
-    "text3": "Later, I realized that this happened because TMCBeans, by default, does not know the location of the JDK on the hard drive to load the modules. To solve the problem, you first need to find the exact location of the JDK on the hard drive. Open the terminal and paste the command you see in the image. This will give you the precise location of the JDK. In the next step, simply open the 'tmcbeans.conf' file inside the TMCBeans directory with an editor (I used VSCode) and paste the JDK location into the 'jdkhome='file/path' line. Don't forget to remove the hashtag at the beginning of the line and save the file. ",
+    "text1": "First of all, you will need to install Java. Unfortunately, the link in the course description is not working, so simply download and install it directly from the official website. TMCBeans only runs with Java 11, so you need to install it. ",
+    "text2": "The next step is to install TMCBeans. In the case of Mac, you may encounter an issue because the file is not trusted/verified. In such a situation, use the Finder to locate the TMCBeans file, and after right-click on it, choosing the 'open' option. This is where my problems started. TMCBeans didn't respond at all.. This is happened because TMCBeans, by default, does not know the location of the JDK on the hard drive to load the modules.",
+    "text3": " To solve the problem, you first need to find the exact location of the JDK on the hard drive. Open the terminal and paste the command you see in the image. This will give you the precise location of the JDK. In the next step, simply open the 'tmcbeans.conf' file inside the TMCBeans directory with an editor (I used VSCode) and paste the JDK location into the 'jdkhome='file/path' line. Don't forget to remove the hashtag at the beginning of the line and save the file. ",
     "conclusion": "TMCBeans will now open without any issues."
+  },
+  {
+    "id": 3,
+    "date": "20. Jul. 2023",
+    "name": "How to use FontAwesome with Angular 16",
+    "urlDescription": "Font Awesome Docs",
+    "url": "https://fontawesome.com/versions",
+    "url2Description": "Using Font Awesome with Angular",
+    "url2": "https://fontawesome.com/docs/web/use-with/angular",
+    "url3Description": "Angular-Fontawesome description on GitHub",
+    "url3": "https://github.com/FortAwesome/angular-fontawesome",
+    "snippet1": "../assets/img/blog/fontawesomeInstall.webp",
+    "snippet2": "../assets/img/blog/fontawesomeInstall3.webp",
+    "snippet3": "../assets/img/blog/fontawesomeAppmodule.webp",
+    "snippet4": "../assets/img/blog/fontawesometemplate.webp",
+    "snippet5": "string",
+    "img": "../assets/img/blog/fontAwesome.webp",
+    "img2": "../assets/img/blog/fontawesomeInstall.webp",
+    "short": "FontAwesome is the most popular icon set and toolkit. It has both paid & free versions. This guide shows you how to use the Free version of Angular FontAwesome.",
+    "text": "You need first install the FontAwesome package. But before installing you need to know which version to install. Not all versions are compatible with the various Angular versions. The following table should give you an idea. You can install the latest version or you can install a particular version as shown below.",
+    "text1": "Since I use Mac, also need to put 'sudo' before the command.",
+    "text2": "Next step is to add FontAwesomeModule to imports in src/app/app.module.ts.",
+    "text3": "You need to tie the icon to the property in your component.",
+    "conclusion": "Now you can use the icon in the template."
   }
 ]

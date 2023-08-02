@@ -77,7 +77,8 @@
   border-radius: 5px;
   display: flex;
   height: auto;
-  width: 100%;
+  margin: 0 auto;
+  width: 60%;
   border-radius: 5px;
   overflow: hidden;
 }
@@ -93,6 +94,7 @@
     object-fit: cover;
     height: auto;
     width: 100%;
+
     & img {
       height: 100%;
       width: 100%;
@@ -105,6 +107,7 @@
   }
 }
 .references {
+  padding-top: 2rem;
   display: flex;
   flex-direction: column;
 
