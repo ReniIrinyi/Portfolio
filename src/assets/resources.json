@@ -182,6 +182,20 @@
             "name": "Vercel",
             "url": "https://vercel.com/",
             "info": "Host static websites for free"
+          },
+          {
+            "id": 5,
+            "img": "../assets/img/resources-imgs/homebrew.webp",
+            "name": "Homebrew",
+            "url": "https://brew.sh",
+            "info": "Homebrew installs the stuff you need that Apple (or your Linux system) didn’t."
+          },
+          {
+            "id": 6,
+            "img": "../assets/img/resources-imgs/git.webp",
+            "name": "Git",
+            "url": "https://git-scm.com",
+            "info": "Git is a free and open source distributed version control system."
           }
         ]
       },
@@ -237,6 +251,13 @@
             "name": "Squoosh",
             "url": "https://squoosh.app/",
             "info": "Squoosh can reduce file size and maintain high quality"
+          },
+          {
+            "id": 7,
+            "img": "../assets/img/resources-imgs/robotstxtGenerator.webp",
+            "name": "Ryte",
+            "url": "https://en.ryte.com/free-tools/robots-txt-generator/#custom",
+            "info": "Ryte is a free Robots.txt Generator"
           }
         ]
       },
