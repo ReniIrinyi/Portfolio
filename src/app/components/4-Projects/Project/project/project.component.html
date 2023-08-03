@@ -17,7 +17,9 @@
           {{ selectedProject.tech }}
         </p>
         <div class="conclusion">
-          <p>{{ selectedProject.conclusion }}</p>
+          <p *ngIf="selectedProject.conclusion">
+            {{ selectedProject.conclusion }}
+          </p>
         </div>
         <ul>
           <li>
@@ -39,25 +41,37 @@
           </div>
         </div>
 
-        <p>{{ selectedProject.description }}</p>
+        <p>{{ selectedProject.description1 }}</p>
       </div>
       <div class="description description--2">
         <div class="img-container">
           <div>
-            <img src="{{ selectedProject.img2 }}" alt="" />
+            <img
+              *ngIf="selectedProject.img2"
+              src="{{ selectedProject.img2 }}"
+              alt=""
+            />
           </div>
         </div>
 
-        <p>{{ selectedProject.description2 }}</p>
+        <p *ngIf="selectedProject.description2">
+          {{ selectedProject.description2 }}
+        </p>
       </div>
       <div class="description description--3">
         <div class="img-container">
           <div>
-            <img src="{{ selectedProject.img3 }}" alt="" />
+            <img
+              *ngIf="selectedProject.img3"
+              src="{{ selectedProject.img3 }}"
+              alt=""
+            />
           </div>
         </div>
 
-        <p>{{ selectedProject.description3 }}</p>
+        <p *ngIf="selectedProject.description3">
+          {{ selectedProject.description3 }}
+        </p>
       </div>
     </div>
     <div class="btn-container">

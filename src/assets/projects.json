@@ -38,18 +38,15 @@
   {
     "idNumber": 3,
     "id": "project--3",
-    "github": "",
-    "url": "",
-    "mockup": "../../../assets/img/projects/blank.webp",
-    "header": "../../../assets/img/projects/blank.webp",
-    "img1": "../../../assets/img/projects/blank.webp",
-    "img2": "../../../assets/img/projects/blank.webp",
-    "img3": "../../../assets/img/projects/blank.webp",
-    "name": "Great stuff",
-    "text": "...",
-    "tech": "...",
-    "description1": "...",
-    "description3": "...",
-    "conclusion": ".... "
+    "github": "https://github.com/ReniIrinyi/edie-homepage",
+    "url": "https://edie-homepage-beta.vercel.app/#home",
+    "mockup": "../../../assets/img/projects/edie/mockup.webp",
+    "header": "../../../assets/img/projects/edie/header.webp",
+    "img1": "../../../assets/img/projects/edie/img1.webp",
+    "name": "Homepage",
+    "text": "The creation of this website belongs among the challenges on the devChallenges.io platform. ",
+    "tech": "Html5, Angular, TypeScript, CS3, Sass",
+    "description1": "At the beginning of my studies, when I got acquainted with HTML and CSS, I started to tackle these fantastic challenges with the aim of improving my skills. However, I reserved the last two challenges in the 'Responsive Web Development' category for the time when I would be able to solve them with the help of a framework. Now, that time has come. I am thrilled to say that I successfully completed the development of the website using Angular. I am very proud of the final result.",
+    "conclusion": "The design is very simple, airy, and clean. I really liked how the layout was designed. I played a lot with flexbox and grid to achieve it."
   }
 ]
