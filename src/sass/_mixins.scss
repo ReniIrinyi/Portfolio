@@ -4,7 +4,6 @@ MIXINS
 @mixin button-regular {
   cursor: pointer;
   @include font-link;
-  font-weight: 500 !important;
   @include boxShadow-ligth;
   color: $regular-fontColor;
   background-color: $button1;

@@ -19,7 +19,7 @@ TECHSTACK COMPONENT
 }
 h1 {
   color: $light-fontColor;
-  font-weight: 600;
+  font-weight: 400;
   z-index: 1;
   text-align: center;
   padding-top: 2rem;
@@ -59,12 +59,14 @@ video {
   &-header {
     display: flex;
     flex-direction: row;
-    align-content: center;
+    align-items: center;
     padding: 1rem 0;
 
     & fa-icon {
+      display: flex;
+      align-items: center;
       @include font-size-p;
-      margin-bottom: 0.2rem;
+
       filter: invert(0);
       color: $header-icons;
     }
@@ -72,6 +74,8 @@ video {
     & h2 {
       color: $stack-header;
       text-transform: uppercase;
+      align-self: center;
+      margin-left: 1rem;
       @include font-size-p;
     }
   }
@@ -84,8 +88,9 @@ video {
 }
 .svg-container {
   display: flex;
+  height: 100%;
+  justify-content: space-evenly;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: $silber-light;
   transition: all 0.5s;
@@ -105,7 +110,7 @@ video {
   }
   & p {
     @include font-size-p-xxs;
-    font-weight: 200 !important;
+    font-weight: 400 !important;
     color: $white-light;
     margin: 0.5rem 0;
     text-transform: uppercase;
@@ -113,8 +118,8 @@ video {
 }
 .svg {
   display: flex;
-  width: 3rem;
-  height: auto;
+  width: auto;
+  height: 3rem;
   filter: invert(0.8);
   @include respond(small-phone) {
     width: 2rem;

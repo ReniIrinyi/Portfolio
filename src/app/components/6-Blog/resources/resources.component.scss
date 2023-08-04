@@ -18,6 +18,10 @@ RESOURCES COMPONENT
   background-color: $header-background;
   @include font-size-p;
   color: $regular-fontColor;
+  @include respond(desktop) {
+    height: 20rem;
+    padding: 4rem;
+  }
   & h1 {
     @include font-size-h2;
     padding-bottom: 1rem;

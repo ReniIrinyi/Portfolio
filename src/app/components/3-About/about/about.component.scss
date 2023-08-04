@@ -83,6 +83,19 @@ ABOUT COMPONENT
     line-height: $line-height-small;
     color: $light-fontColor;
     @include font-size-p;
+    transition: all 0.5s;
+  }
+
+  & a {
+    text-decoration: none;
+  }
+
+  & .link {
+    color: #acacac;
+  }
+
+  & .link:hover {
+    color: #fff;
   }
 }
 /*========================

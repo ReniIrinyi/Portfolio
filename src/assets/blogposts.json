@@ -69,5 +69,28 @@
     "text2": "Next step is to add FontAwesomeModule to imports in src/app/app.module.ts.",
     "text3": "You need to tie the icon to the property in your component.",
     "conclusion": "Now you can use the icon in the template."
+  },
+  {
+    "id": 4,
+    "date": "27. Jul. 2023",
+    "name": "How to use ngx-charts in Angular 16 Application",
+    "urlDescription": "NGX-Charts Demo",
+    "url": "https://swimlane.github.io/ngx-charts/#/ngx-charts/bar-horizontal",
+    "url2Description": "My CV with Ngx-Charts",
+    "url2": "#",
+    "url3Description": "Ngx-Charts Docs",
+    "url3": "https://swimlane.gitbook.io/ngx-charts/",
+    "snippet1": "../assets/img/blog/installCharts.webp",
+    "snippet2": "../assets/img/blog/importChartModules.webp",
+    "snippet3": "../assets/img/blog/installDependenciesforCharts.webp",
+    "snippet4": "../assets/img/blog/componentChart.webp",
+    "snippet5": "../assets/img/blog/templateChart.webp",
+    "img": "../assets/img/blog/fontAwesome.webp",
+    "short": "FontAwesome is the most popular icon set and toolkit. It has both paid & free versions. This guide shows you how to use the Free version of Angular FontAwesome.",
+    "text": "In the context of a devChallenges-challenge, I decided this would be a great opportunity to finally build my CV. There was a simple chartbar designed by the devChallenges that I could have easily implemented with CSS, but that's not my style :). I decided to create my first chartbar by myself in Angular. At first I wasn't sure how to start, and I did a lot of searching to find the best library for this purpose. In the end, I decided to go with the ngx library. Since I had a lot of trouble putting everything together and found few resources on the web, I decided to share with you how I managed to apply the ngx charts library in my CV project.",
+    "text1": "The first step is to install the library and import it into the app.module file.",
+    "text2": "To avoid making the same mistake as I did, after installing the library, we need to install some dependencies ('d3-shape', 'd3-scale', 'd3-selection') that are required for the ngx-charts library. After installing these modules, just crashed my whole application. To be honest, I didn't really understand why. I simply cleared out the 'node_modules' folder with the 'sudo rm -rf node_modules' command, reinstalled all the dependencies, and everything just worked.",
+    "text3": "The ngx-charts provides different components for different charts... I think the NGX-Libary demo is very good, you can try everything here. You can find it at the link below, I played a lot here. Based on that I ended up setting up my chart the way I like it. You have to set the configuration in the component.ts-file of the component you want. ",
+    "conclusion": "Finally all you have to do is add it to the template."
   }
 ]
