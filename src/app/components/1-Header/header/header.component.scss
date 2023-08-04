@@ -13,7 +13,13 @@ HEADER COMPONENTS
   @include respond(small-phone) {
     height: 5rem;
   }
+  @include respond(small-phone, landscape) {
+    height: 5rem;
+  }
   @include respond(medium-phone) {
+    height: 5rem;
+  }
+  @include respond(medium-phone, landscape) {
     height: 5rem;
   }
 
