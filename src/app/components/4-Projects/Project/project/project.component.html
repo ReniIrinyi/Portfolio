@@ -16,11 +16,7 @@
           <strong> Technologies used: </strong>
           {{ selectedProject.tech }}
         </p>
-        <div class="conclusion">
-          <p *ngIf="selectedProject.conclusion">
-            {{ selectedProject.conclusion }}
-          </p>
-        </div>
+
         <ul>
           <li>
             <a href="{{ selectedProject.github }}">
@@ -67,10 +63,13 @@
               alt=""
             />
           </div>
+          
         </div>
-
         <p *ngIf="selectedProject.description3">
           {{ selectedProject.description3 }}
+        </p>
+        <p class="conclusion" *ngIf="selectedProject.conclusion">
+          {{ selectedProject.conclusion }}
         </p>
       </div>
     </div>

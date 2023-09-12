@@ -44,9 +44,23 @@
     "header": "../../../assets/img/projects/edie/header.webp",
     "img1": "../../../assets/img/projects/edie/img1.webp",
     "name": "Homepage",
-    "text": "The creation of this website belongs among the challenges on the devChallenges.io platform. ",
+    "text": "The creation of this website belongs among the challenges on the devChallenges.io platform. The design is very simple, airy, and clean. I really liked how the layout was designed. I played a lot with flexbox and grid to achieve it.",
     "tech": "Html5, Angular, TypeScript, CS3, Sass",
-    "description1": "At the beginning of my studies, when I got acquainted with HTML and CSS, I started to tackle these fantastic challenges with the aim of improving my skills. However, I reserved the last two challenges in the 'Responsive Web Development' category for the time when I would be able to solve them with the help of a framework. Now, that time has come. I am thrilled to say that I successfully completed the development of the website using Angular. I am very proud of the final result.",
-    "conclusion": "The design is very simple, airy, and clean. I really liked how the layout was designed. I played a lot with flexbox and grid to achieve it."
+    "description1": "At the beginning of my studies, when I got acquainted with HTML and CSS, I started to tackle these fantastic challenges with the aim of improving my skills. However, I reserved the last two challenges in the 'Responsive Web Development' category for the time when I would be able to solve them with the help of a framework. Now, that time has come. I am thrilled to say that I successfully completed the development of the website using Angular. I am very proud of the final result."
+  },
+  {
+    "idNumber": 4,
+    "id": "project--4",
+    "github": "https://github.com/ReniIrinyi/Adventsfenster-Gruppe-Homepage",
+    "url": "https://adventsfenster-bottenwil.com/",
+    "mockup": "../../../assets/img/projects/advent/header2.png",
+    "header": "../../../assets/img/projects/advent/header.jpeg",
+    "img1": "../../../assets/img/projects/advent/calender.png",
+    "img2": "../../../assets/img/projects/advent/map.png",
+    "name": "Homepage",
+    "text": "I created this Christmas-themed website for the local Advent window group, which has a history of more than 25 years. Despite the simplicity of the website, I learned something new again: I managed to implement the Google Maps API, as requested, so that users can find the windows accurately. I also created an interactive Advent window with Sass, which was a lot of fun. ",
+    "tech": "Html5, Angular, TypeScript, CS3, Sass, Php",
+    "conclusion": "I wanted to put a map on the website where users can easily find the Advent windows. The idea was Google Maps API, and fortunately, after thoroughly chewing through the documentation myself, I was able to implement my idea. ",
+    "description1": "The next challenge was to create an interactive advent window. I had spotted a beautifully created Christmas design on the OnePageLove website and used it to create my own interactive window with the help of Sass. "
   }
 ]
