@@ -1,53 +1,10 @@
 <div class="blog-container">
   <div class="left">
     <p>Recent posts</p>
-
-    <div class="sidebar" *ngFor="let post of posts">
-      <ul (click)="selectPost(post)">
-        <li>
-          <a (click)="selectPost(post)" [routerLink]="'/blog/:' + post.id">{{
-            post.name
-          }}</a>
-        </li>
+    <div class="sidebar" *ngFor="let post of blogPosts">
+      <ul>
+        <a [routerLink]="'/blogpost/' + post.id">{{ post.name }}</a>
       </ul>
     </div>
   </div>
-  <ng-container *ngIf="selectedPost">
-    <div class="right">
-      <h2>{{ selectedPost.name }}</h2>
-      <p>{{ selectedPost.date }}</p>
-      <div class="img-container">
-        <div>
-          <img
-            width="10"
-            height="10"
-            alt="{{ selectPost.name }}"
-            class="img-project"
-            src="{{ selectedPost.img }}"
-            alt="{{ selectedPost.name }}"
-          />
-        </div>
-      </div>
-      <p>{{ selectedPost.short }}</p>
-      <div class="content">
-        <p>{{ selectedPost.text }}</p>
-        <img class="codeSnippet" src="{{ selectedPost.snippet1 }}" alt="" />
-        <p>{{ selectedPost.text1 }}</p>
-        <img class="codeSnippet" src="{{ selectedPost.snippet2 }}" alt="" />
-        <p>{{ selectedPost.text2 }}</p>
-        <img class="codeSnippet" src="{{ selectedPost.snippet3 }}" alt="" />
-        <p>{{ selectedPost.text3 }}</p>
-        <img class="codeSnippet" src="{{ selectedPost.snippet4 }}" alt="" />
-        <img class="codeSnippet" src="{{ selectedPost.snippet5 }}" alt="" />
-        <p>{{ selectedPost.text4 }}</p>
-      </div>
-      <p>{{ selectedPost.conclusion }}</p>
-      <div class="references">
-        <p>References:</p>
-        <a href="{{ selectedPost.url }}">{{ selectedPost.urlDescription }}</a>
-        <a href="{{ selectedPost.url2 }}">{{ selectedPost.url2Description }}</a>
-        <a href="{{ selectedPost.url3 }}">{{ selectedPost.url3Description }}</a>
-      </div>
-    </div>
-  </ng-container>
 </div>

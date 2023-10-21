@@ -1,93 +1,87 @@
 <!-- project-component -->
-<div id="project" class="project-container">
-  <ng-container *ngIf="selectedProject">
-    <div [@fade-in]>
-      <div class="header-img-container {{ selectedProject.id }}" [@fade-in]>
-        <img
-          src="{{ selectedProject.mockup }}"
-          alt="{{ selectedProject.id }}"
-        />
-      </div>
-      <div class="text">
-        <p>
-          {{ selectedProject.text }}
-        </p>
-        <p>
-          <strong> Technologies used: </strong>
-          {{ selectedProject.tech }}
-        </p>
-
-        <ul>
-          <li>
-            <a href="{{ selectedProject.github }}">
-              <fa-icon class="svg" [icon]="faGithub"></fa-icon>
-            </a>
-          </li>
-          <li>
-            <a href="{{ selectedProject.url }}">
-              <fa-icon class="svg" [icon]="faShare"> </fa-icon>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="description description--1">
-        <div class="img-container">
-          <div>
-            <img src="{{ selectedProject.img1 }}" alt="" />
-          </div>
-        </div>
-
-        <p>{{ selectedProject.description1 }}</p>
-      </div>
-      <div class="description description--2">
-        <div class="img-container">
-          <div>
-            <img
-              *ngIf="selectedProject.img2"
-              src="{{ selectedProject.img2 }}"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <p *ngIf="selectedProject.description2">
-          {{ selectedProject.description2 }}
-        </p>
-      </div>
-      <div class="description description--3">
-        <div class="img-container">
-          <div>
-            <img
-              *ngIf="selectedProject.img3"
-              src="{{ selectedProject.img3 }}"
-              alt=""
-            />
-          </div>
-          
-        </div>
-        <p *ngIf="selectedProject.description3">
-          {{ selectedProject.description3 }}
-        </p>
-        <p class="conclusion" *ngIf="selectedProject.conclusion">
-          {{ selectedProject.conclusion }}
-        </p>
-      </div>
+<div
+  *ngIf="selectedProject$ | async as selectedProject"
+  id="project"
+  class="project-container"
+>
+  <div>
+    <div class="header-img-container {{ selectedProject.id }}">
+      <img
+        src="{{ selectedProject.mockup }}"
+        alt="{{ selectedProject.id }}"
+        width="10"
+        height="10"
+        class="img"
+      />
     </div>
-    <div class="btn-container">
-      <button
-        (click)="switchPage(selectedProject, -1)"
-        [routerLink]="'/project/:' + selectedProject.idNumber"
-      >
-        Back
-      </button>
-      <button [routerLink]="'/projects'">back to Projects</button>
-      <button
-        (click)="switchPage(selectedProject, +1)"
-        [routerLink]="'/project/:' + selectedProject.idNumber"
-      >
-        Next
-      </button>
+    <div class="text">
+      <p>
+        {{ selectedProject.text }}
+      </p>
+      <p>
+        <strong> Technologies used: </strong>
+        {{ selectedProject.tech }}
+      </p>
+
+      <ul>
+        <li>
+          <a href="{{ selectedProject.github }}">
+            <fa-icon class="svg" [icon]="faGithub"></fa-icon>
+          </a>
+        </li>
+        <li>
+          <a href="{{ selectedProject.url }}">
+            <fa-icon class="svg" [icon]="faShare"> </fa-icon>
+          </a>
+        </li>
+      </ul>
     </div>
-  </ng-container>
+    <div class="description description--1">
+      <div class="img-container">
+        <div>
+          <img src="{{ selectedProject.img1 }}" alt="" />
+        </div>
+      </div>
+
+      <p>{{ selectedProject.description1 }}</p>
+    </div>
+    <div class="description description--2">
+      <div class="img-container">
+        <div>
+          <img
+            *ngIf="selectedProject.img2"
+            src="{{ selectedProject.img2 }}"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <p *ngIf="selectedProject.description2">
+        {{ selectedProject.description2 }}
+      </p>
+    </div>
+    <div class="description description--3">
+      <div class="img-container">
+        <div>
+          <img
+            *ngIf="selectedProject.img3"
+            src="{{ selectedProject.img3 }}"
+            alt=""
+          />
+        </div>
+      </div>
+      <p *ngIf="selectedProject.description3">
+        {{ selectedProject.description3 }}
+      </p>
+      <p class="conclusion" *ngIf="selectedProject.conclusion">
+        {{ selectedProject.conclusion }}
+      </p>
+    </div>
+  </div>
+  <div class="btn-container">
+    <button (click)="goPrevious()">Back</button>
+    <button [routerLink]="'/projects'">back to Projects</button>
+    <button (click)="goNext()">Next</button>
+  </div>
 </div>
 <!-- project-component ends -->

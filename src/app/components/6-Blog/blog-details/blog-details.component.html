@@ -1,0 +1,74 @@
+<!-- blogpost-component -->
+<div
+  *ngIf="selectedPost$ | async as selectedPost"
+  id="blogpost"
+  class="post-container"
+>
+  <div>
+    <div class="header-img-container">
+      <div>
+        <img
+          width="10"
+          height="10"
+          alt="{{ selectedPost.name }}"
+          class="img"
+          src="{{ selectedPost.img }}"
+        />
+      </div>
+      <div class="text">
+        <p>{{ selectedPost.name }}</p>
+        <p>{{ selectedPost.date }}</p>
+        <p>
+          {{ selectedPost.short }}
+        </p>
+      </div>
+      <div class="references">
+        <p>References</p>
+        <ul>
+          <li>
+            <a href="{{ selectedPost.url }}">{{
+              selectedPost.urlDescription
+            }}</a>
+          </li>
+          <li>
+            <a href="{{ selectedPost.url2 }}">{{
+              selectedPost.url2Description
+            }}</a>
+          </li>
+          <li>
+            <a href="{{ selectedPost.url3 }}">{{
+              selectedPost.url3Description
+            }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="description description--1">
+        <p>{{ selectedPost.text }}</p>
+        <pre prism>
+          <code >{{selectedPost.snippet1}}</code>
+
+        </pre>
+      </div>
+      <div class="description description--2">
+        <p>{{ selectedPost.text2 }}</p>
+        <pre prism>
+          <code ></code>
+        </pre>
+      </div>
+      <div class="description description--3">
+        <p>{{ selectedPost.text3 }}</p>
+        <pre prism>
+          <code ></code>
+        </pre>
+
+        <p class="conclusion">{{ selectedPost.conclusion }}</p>
+      </div>
+    </div>
+    <div class="btn-container">
+      <button (click)="goPrevious()">Back</button>
+      <button [routerLink]="'/blog'">back to Blog</button>
+      <button (click)="goNext()">Next</button>
+    </div>
+  </div>
+  <!-- blogpost component ends -->
+</div>

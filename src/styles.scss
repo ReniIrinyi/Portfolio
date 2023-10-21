@@ -3,6 +3,8 @@
 IMPORT DIRECTORIES
 **************************
 !*/
+@import "node_modules/prismjs/themes/prism.css";
+
 @import "./sass/animations";
 @import "./sass/colors";
 @import "./sass/fonts";
@@ -13,3 +15,12 @@ IMPORT DIRECTORIES
 **************************
 **************************
 !*/
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

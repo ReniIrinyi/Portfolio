@@ -3,7 +3,6 @@ import { BrowserModule } from "@angular/platform-browser";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { HttpClientModule } from "@angular/common/http";
 import { Routes, RouterModule } from "@angular/router";
-import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 
 import { FontAwesomeModule } from "@fortawesome/angular-fontawesome";
@@ -20,16 +19,25 @@ import { SupportComponent } from "./components/9-Helpers/support/support.compone
 import { SharebuttonsComponent } from "./components/9-Helpers/sharebuttons/sharebuttons.component";
 import { LinksComponent } from "./components/9-Helpers/links/links.component";
 import { ResourcesComponent } from "./components/6-Blog/resources/resources.component";
+import { NgxSpinnerModule } from "ngx-spinner";
+import { SpinnerComponent } from "./components/9-Helpers/spinner/spinner.component";
+import { BlogDetailsComponent } from "./components/6-Blog/blog-details/blog-details.component";
+import { PaginatorComponent } from "./components/9-Helpers/paginator/paginator.component";
+import { MatPaginatorModule } from "@angular/material/paginator";
 
-const appRoutes: Routes = [
+const routes: Routes = [
+  { path: "", component: HomeComponent, pathMatch: "full" },
   { path: "home", component: AboutComponent },
   { path: "projects", component: ProjectsComponent },
   { path: "project/:id", component: ProjectComponent },
-  { path: "blog/:1", component: BlogComponent },
-  { path: "blog/:id", component: BlogComponent },
+  { path: "blog", component: BlogComponent },
+  { path: "blogpost/:id", component: BlogDetailsComponent },
   { path: "resources", component: ResourcesComponent },
-  { path: "page-not-found", component: PageNotFoundComponent },
-  { path: "", redirectTo: "/home", pathMatch: "full" },
+  {
+    path: "page-not-found",
+    component: PageNotFoundComponent,
+    pathMatch: "full",
+  },
   { path: "**", redirectTo: "/home", pathMatch: "full" },
 ];
 
@@ -49,15 +57,21 @@ const appRoutes: Routes = [
     SharebuttonsComponent,
     LinksComponent,
     ResourcesComponent,
+    SpinnerComponent,
+    BlogDetailsComponent,
+    PaginatorComponent,
   ],
+
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    AppRoutingModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(routes),
     FontAwesomeModule,
+    NgxSpinnerModule,
+    MatPaginatorModule,
   ],
+
   providers: [],
   bootstrap: [AppComponent],
 })

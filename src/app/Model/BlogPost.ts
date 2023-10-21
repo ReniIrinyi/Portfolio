@@ -2,6 +2,11 @@ export interface BlogPost {
   id: number;
   date: Date;
   name: string;
+  short: string;
+  text: string;
+  text2: string;
+  text3: string;
+  conclusion: string;
   urlDescription?: string; // Optional property
   url?: string; // Optional property
   url2Description?: string; // Optional property
@@ -15,9 +20,4 @@ export interface BlogPost {
   snippet5?: string; // Optional property
   img?: string; // Optional property
   img2?: string; // Optional property
-  short: string;
-  text: string;
-  text2: string;
-  text3: string;
-  conclusion: string;
 }

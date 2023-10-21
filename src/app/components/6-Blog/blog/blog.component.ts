@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import { ComponentService } from "src/app/Service/ComponentService";
-import { ScrollService } from "src/app/Service/ScrollService";
 import { ProjectDataService } from "src/app/Service/ProjectDataService";
 import { BlogPost } from "src/app/Model/BlogPost";
 
@@ -12,58 +11,21 @@ import { BlogPost } from "src/app/Model/BlogPost";
 export class BlogComponent implements OnInit {
   constructor(
     private componentService: ComponentService,
-    private scrollService: ScrollService,
     private projectDataService: ProjectDataService
   ) {}
-
   isSticky = false;
-  posts: BlogPost[] = [];
-  selectedPost: any;
+  blogPosts: BlogPost[] = [];
 
   ngOnInit(): void {
-    this.fetchBlogPosts();
-    this.subscribeToIsSticky();
+    this.subscribeToObservable();
     // Turn on the home and tech-stack components
     this.componentService.setComponentStatus(false);
-    this.addMarginToComponentBasedOnHeader();
   }
 
   //Subscribe to getPosts method to retrieve the Blogposts
-  private fetchBlogPosts() {
-    this.projectDataService.getPosts().subscribe(
-      (posts) => {
-        this.posts = posts;
-        this.selectedPost = this.projectDataService.getSelectedPost();
-      },
-      (error) => {
-        console.error("Error fetching projects:", error);
-      }
-    );
-  }
-
-  selectPost(post: any) {
-    this.selectedPost = this.posts.find((p) => p.id == post.id);
-    this.projectDataService.setSelectedPost(this.selectedPost);
-    const leftContainer = document.querySelector(".right");
-
-    if (leftContainer && this.selectedPost) {
-      leftContainer.classList.add("show");
-    }
-  }
-  //subscribe to the isSticky$ observable from ScrollService
-  private subscribeToIsSticky(): void {
-    this.scrollService.isSticky$.subscribe((isSticky) => {
-      this.isSticky = isSticky;
+  subscribeToObservable() {
+    this.projectDataService.getPosts().subscribe((p) => {
+      this.blogPosts = p;
     });
-  }
-  // Adding margin-top of the element based on the header-height and sticky-state
-  private addMarginToComponentBasedOnHeader(): void {
-    const projectElement = document.getElementById("project");
-    if (projectElement) {
-      const headerHeight = document.getElementById("header")?.clientHeight || 0;
-      projectElement.style.marginTop = this.isSticky
-        ? headerHeight + "px"
-        : "0";
-    }
   }
 }
