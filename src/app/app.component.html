@@ -1,20 +1,9 @@
 <!-- app component -->
 <div>
-  <!-- app-header -->
   <app-header></app-header>
-  <!--app-header ends -->
-  <!-- app-home -->
-  <app-home *ngIf="componentStatus"></app-home>
-  <!-- app-home ends -->
+  <app-home *ngIf="componentStatus$ | async as componentStatus"></app-home>
   <router-outlet></router-outlet>
-  <!-- app-blog -->
-  <app-blog *ngIf="blogComponentStatus"></app-blog>
-  <!-- app-blog ends -->
-  <!-- app-techstack -->
-  <app-techstack *ngIf="componentStatus"></app-techstack>
-  <!-- app-techstack ends -->
-  <!-- app-footer -->
+  <app-techstack></app-techstack>
   <app-footer></app-footer>
-  <!-- app-footer ends -->
 </div>
 <!-- app component ends -->

@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { ComponentService } from "src/app/Service/ComponentService";
 import { ProjectDataService } from "src/app/Service/ProjectDataService";
 import { BlogPost } from "src/app/Model/BlogPost";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-blog",
@@ -14,18 +15,13 @@ export class BlogComponent implements OnInit {
     private projectDataService: ProjectDataService
   ) {}
   isSticky = false;
-  blogPosts: BlogPost[] = [];
+  blogPosts$: Observable<BlogPost[]> | undefined;
 
   ngOnInit(): void {
-    this.subscribeToObservable();
+    this.blogPosts$ = this.projectDataService.getPosts();
     // Turn on the home and tech-stack components
     this.componentService.setComponentStatus(false);
   }
 
   //Subscribe to getPosts method to retrieve the Blogposts
-  subscribeToObservable() {
-    this.projectDataService.getPosts().subscribe((p) => {
-      this.blogPosts = p;
-    });
-  }
 }

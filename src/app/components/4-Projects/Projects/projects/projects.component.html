@@ -1,7 +1,7 @@
 <!-- projects-component -->
 <div class="projects-container">
   <div id="projects">
-    <ng-container *ngFor="let project of projects">
+    <ng-container *ngFor="let project of projects$ | async as projects">
       <div class="project-container">
         <div class="header-container">
           <div
@@ -22,4 +22,5 @@
     </ng-container>
   </div>
 </div>
+
 <!-- projects-component ends -->

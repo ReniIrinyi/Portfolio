@@ -2,6 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from "@angular/core";
 import { ProjectDataService } from "src/app/Service/ProjectDataService";
 import { ComponentService } from "src/app/Service/ComponentService";
 import { Project } from "src/app/Model/Project";
+import { Observable } from "rxjs";
 
 @Component({
   selector: "app-projects",
@@ -13,16 +14,10 @@ export class ProjectsComponent implements OnInit {
     private projectDataService: ProjectDataService,
     private componentService: ComponentService
   ) {}
-  projects: Project[] = [];
+  projects$: Observable< Project[]> | undefined;
   ngOnInit(): void {
-    this.subscribeToObservable();
+    this.projects$=this.projectDataService.getProjects(); 
     // Turn on the home and tech-stack components
     this.componentService.setComponentStatus(true);
-  }
-  // Subscribe to getProjects() method to retrieve the list of projects
-  subscribeToObservable() {
-    this.projectDataService.getProjects().subscribe((p) => {
-      this.projects = p;
-    });
   }
 }

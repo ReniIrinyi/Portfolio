@@ -1,7 +1,7 @@
 <div class="blog-container">
   <div class="left">
     <p>Recent posts</p>
-    <div class="sidebar" *ngFor="let post of blogPosts">
+    <div class="sidebar" *ngFor="let post of blogPosts$ | async as blogpost">
       <ul>
         <a [routerLink]="'/blogpost/' + post.id">{{ post.name }}</a>
       </ul>
