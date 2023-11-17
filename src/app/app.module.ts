@@ -30,8 +30,6 @@ const routes: Routes = [
   { path: "home", component: AboutComponent },
   { path: "projects", component: ProjectsComponent },
   { path: "project/:id", component: ProjectComponent },
-  { path: "blog", component: BlogComponent },
-  { path: "blogpost/:id", component: BlogDetailsComponent },
   { path: "resources", component: ResourcesComponent },
   {
     path: "page-not-found",
