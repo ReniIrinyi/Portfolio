@@ -10,10 +10,7 @@ import { Observable } from "rxjs";
 })
 export class AppComponent implements OnInit {
   constructor(private componentService: ComponentService) {}
-  componentStatus$: Observable<boolean> | undefined;
   blogComponentStatus: boolean | undefined;
 
-  ngOnInit(): void {
-    this.componentStatus$ = this.componentService.componentStatus$;
-  }
+  ngOnInit(): void {}
 }

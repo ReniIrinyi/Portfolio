@@ -26,16 +26,8 @@ import { PaginatorComponent } from "./components/9-Helpers/paginator/paginator.c
 import { MatPaginatorModule } from "@angular/material/paginator";
 
 const routes: Routes = [
-  { path: "", component: HomeComponent, pathMatch: "full" },
   { path: "home", component: AboutComponent },
-  { path: "projects", component: ProjectsComponent },
-  { path: "project/:id", component: ProjectComponent },
   { path: "resources", component: ResourcesComponent },
-  {
-    path: "page-not-found",
-    component: PageNotFoundComponent,
-  },
-  { path: "**", redirectTo: "/home" },
 ];
 
 @NgModule({
