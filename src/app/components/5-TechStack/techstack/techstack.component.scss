@@ -125,6 +125,16 @@ video {
     width: 2rem;
     height: 2rem;
   }
+
+  &-kendo {
+    color: #fff;
+    filter: grayscale(1) invert(0.8);
+  }
+
+  &-php {
+    filter: grayscale(1) invert(0.8);
+    color: #fff;
+  }
 }
 
 /*========================
