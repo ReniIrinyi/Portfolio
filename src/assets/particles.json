@@ -49,12 +49,12 @@
       "enable": true,
       "distance": 30,
       "color": "#C0C0C0",
-      "opacity": 0.6,
-      "width": 0.2
+      "opacity": 0.8,
+      "width": 0.3
     },
     "move": {
       "enable": true,
-      "speed": 0.6,
+      "speed": 1.7,
       "direction": "none",
       "random": false,
       "straight": false,
